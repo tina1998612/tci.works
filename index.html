@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="utf-8">
+	 <meta http-equiv="Cache-control" content="public">
+	 <meta http-equiv="max-age" content="604800" />
+	 <title>輕鬆學會寫程式</title>
+	 <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	 <meta property="og:title" content="輕鬆學會寫程式" />
+	 <meta property="og:description" content="改變未來，從寫程式開始!" />
+	 <meta property="og:image" content="https://learntocodetw.github.io/images/course1.jpg" />
+	 <meta property="fb:app_id" content="128256714390437"/>
+	 <meta property="og:site_name" content="輕鬆學會寫程式" />
+ 	 <meta property="og:locale" content="zh_TW" />
+	<link rel="icon" href="/favicon.ico">
+		<meta name="author" content="輕鬆學會寫程式" />
+		<meta name="description" content="改變未來，從寫程式開始!">
+		<meta name="keywords" content="程式設計, 線上課程, 寫程式, 電腦, Python, Udemy" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+	<!-- Royal Preloader CSS -->
+	<style>
+		body.royal_preloader{background:0;visibility:hidden}#royal_preloader{font-family:Microsoft JhengHei;font-size:12px;visibility:visible;position:fixed;top:0;right:0;bottom:0;left:0;height:auto;margin:0;z-index:9999999999}#royal_preloader.royal_preloader_number:before,#royal_preloader.royal_preloader_progress:before{content:'';position:absolute;top:0;right:0;bottom:0;left:0}#royal_preloader.complete{opacity:0;-webkit-transition:opacity .2s linear .5s;-moz-transition:opacity .2s linear .5s;-ms-transition:opacity .2s linear .5s;-o-transition:opacity .2s linear .5s;transition:opacity .2s linear .5s}#royal_preloader.royal_preloader_line{height:2px;bottom:auto}#royal_preloader.royal_preloader_progress .royal_preloader_percentage{position:absolute;top:50%;left:0;right:0;color:#fff;font-family:Microsoft JhengHei;font-size:20px;text-align:center}#royal_preloader.royal_preloader_progress .royal_preloader_loader{content:'';position:absolute;top:50%;left:0;right:0;width:60%;height:2px;margin:-10px auto auto auto;background-color:rgba(0,0,0,0.1)}#royal_preloader.royal_preloader_progress .royal_preloader_meter{width:0;height:100%;margin:auto;padding:0;background-color:#ff3b30}@-webkit-keyframes rotate{0%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotate{0%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(360deg)}}@-ms-keyframes rotate{0%{-ms-transform:rotate(0)}100%{-ms-transform:rotate(360deg)}}@-o-keyframes rotate{0%{-o-transform:rotate(0)}100%{-o-transform:rotate(360deg)}}@keyframes rotate{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+	</style>
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
+
+	<!-- jQuery Files -->
+	<script type="text/javascript">
+			/*! jQuery v2.1.3 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
+		!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=a.document,m="2.1.3",n=function(a,b){return new n.fn.init(a,b)},o=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,p=/^-ms-/,q=/-([\da-z])/gi,r=function(a,b){return b.toUpperCase()};n.fn=n.prototype={jquery:m,constructor:n,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=n.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return n.each(this,a,b)},map:function(a){return this.pushStack(n.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},n.extend=n.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||n.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(a=arguments[h]))for(b in a)c=g[b],d=a[b],g!==d&&(j&&d&&(n.isPlainObject(d)||(e=n.isArray(d)))?(e?(e=!1,f=c&&n.isArray(c)?c:[]):f=c&&n.isPlainObject(c)?c:{},g[b]=n.extend(j,f,d)):void 0!==d&&(g[b]=d));return g},n.extend({expando:"jQuery"+(m+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===n.type(a)},isArray:Array.isArray,isWindow:function(a){return null!=a&&a===a.window},isNumeric:function(a){return!n.isArray(a)&&a-parseFloat(a)+1>=0},isPlainObject:function(a){return"object"!==n.type(a)||a.nodeType||n.isWindow(a)?!1:a.constructor&&!j.call(a.constructor.prototype,"isPrototypeOf")?!1:!0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(a){var b,c=eval;a=n.trim(a),a&&(1===a.indexOf("use strict")?(b=l.createElement("script"),b.text=a,l.head.appendChild(b).parentNode.removeChild(b)):c(a))},camelCase:function(a){return a.replace(p,"ms-").replace(q,r)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=s(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(o,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(s(Object(a))?n.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){return null==b?-1:g.call(b,a,c)},merge:function(a,b){for(var c=+b.length,d=0,e=a.length;c>d;d++)a[e++]=b[d];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=s(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(c=a[b],b=a,a=c),n.isFunction(a)?(e=d.call(arguments,2),f=function(){return a.apply(b||this,e.concat(d.call(arguments)))},f.guid=a.guid=a.guid||n.guid++,f):void 0},now:Date.now,support:k}),n.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function s(a){var b=a.length,c=n.type(a);return"function"===c||n.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var t=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=hb(),z=hb(),A=hb(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,ab=/[+~]/,bb=/'|\\/g,cb=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),db=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},eb=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fb){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function gb(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(bb,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+rb(o[l]);w=ab.test(a)&&pb(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function hb(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ib(a){return a[u]=!0,a}function jb(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function kb(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function lb(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function mb(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function nb(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function ob(a){return ib(function(b){return b=+b,ib(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pb(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=gb.support={},f=gb.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=gb.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",eb,!1):e.attachEvent&&e.attachEvent("onunload",eb)),p=!f(g),c.attributes=jb(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=jb(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=jb(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(cb,db);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(cb,db);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(jb(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),jb(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&jb(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return lb(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?lb(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},gb.matches=function(a,b){return gb(a,null,null,b)},gb.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return gb(b,n,null,[a]).length>0},gb.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},gb.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},gb.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},gb.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=gb.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=gb.selectors={cacheLength:50,createPseudo:ib,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(cb,db),a[3]=(a[3]||a[4]||a[5]||"").replace(cb,db),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||gb.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&gb.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(cb,db).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=gb.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||gb.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ib(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ib(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ib(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ib(function(a){return function(b){return gb(a,b).length>0}}),contains:ib(function(a){return a=a.replace(cb,db),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ib(function(a){return W.test(a||"")||gb.error("unsupported lang: "+a),a=a.replace(cb,db).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:ob(function(){return[0]}),last:ob(function(a,b){return[b-1]}),eq:ob(function(a,b,c){return[0>c?c+b:c]}),even:ob(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:ob(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:ob(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:ob(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=mb(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=nb(b);function qb(){}qb.prototype=d.filters=d.pseudos,d.setFilters=new qb,g=gb.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?gb.error(a):z(a,i).slice(0)};function rb(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sb(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function tb(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ub(a,b,c){for(var d=0,e=b.length;e>d;d++)gb(a,b[d],c);return c}function vb(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wb(a,b,c,d,e,f){return d&&!d[u]&&(d=wb(d)),e&&!e[u]&&(e=wb(e,f)),ib(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ub(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:vb(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=vb(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=vb(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xb(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sb(function(a){return a===b},h,!0),l=sb(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sb(tb(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wb(i>1&&tb(m),i>1&&rb(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xb(a.slice(i,e)),f>e&&xb(a=a.slice(e)),f>e&&rb(a))}m.push(c)}return tb(m)}function yb(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=vb(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&gb.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ib(f):f}return h=gb.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xb(b[c]),f[u]?d.push(f):e.push(f);f=A(a,yb(e,d)),f.selector=a}return f},i=gb.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(cb,db),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(cb,db),ab.test(j[0].type)&&pb(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&rb(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,ab.test(a)&&pb(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=jb(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),jb(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||kb("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&jb(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||kb("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),jb(function(a){return null==a.getAttribute("disabled")})||kb(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),gb}(a);n.find=t,n.expr=t.selectors,n.expr[":"]=n.expr.pseudos,n.unique=t.uniqueSort,n.text=t.getText,n.isXMLDoc=t.isXML,n.contains=t.contains;var u=n.expr.match.needsContext,v=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,w=/^.[^:#\[\.,]*$/;function x(a,b,c){if(n.isFunction(b))return n.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return n.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(w.test(b))return n.filter(b,a,c);b=n.filter(b,a)}return n.grep(a,function(a){return g.call(b,a)>=0!==c})}n.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?n.find.matchesSelector(d,a)?[d]:[]:n.find.matches(a,n.grep(b,function(a){return 1===a.nodeType}))},n.fn.extend({find:function(a){var b,c=this.length,d=[],e=this;if("string"!=typeof a)return this.pushStack(n(a).filter(function(){for(b=0;c>b;b++)if(n.contains(e[b],this))return!0}));for(b=0;c>b;b++)n.find(a,e[b],d);return d=this.pushStack(c>1?n.unique(d):d),d.selector=this.selector?this.selector+" "+a:a,d},filter:function(a){return this.pushStack(x(this,a||[],!1))},not:function(a){return this.pushStack(x(this,a||[],!0))},is:function(a){return!!x(this,"string"==typeof a&&u.test(a)?n(a):a||[],!1).length}});var y,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=n.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a[0]&&">"===a[a.length-1]&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||y).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof n?b[0]:b,n.merge(this,n.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:l,!0)),v.test(c[1])&&n.isPlainObject(b))for(c in b)n.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}return d=l.getElementById(c[2]),d&&d.parentNode&&(this.length=1,this[0]=d),this.context=l,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):n.isFunction(a)?"undefined"!=typeof y.ready?y.ready(a):a(n):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),n.makeArray(a,this))};A.prototype=n.fn,y=n(l);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};n.extend({dir:function(a,b,c){var d=[],e=void 0!==c;while((a=a[b])&&9!==a.nodeType)if(1===a.nodeType){if(e&&n(a).is(c))break;d.push(a)}return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),n.fn.extend({has:function(a){var b=n(a,this),c=b.length;return this.filter(function(){for(var a=0;c>a;a++)if(n.contains(this,b[a]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=u.test(a)||"string"!=typeof a?n(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&n.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?n.unique(f):f)},index:function(a){return a?"string"==typeof a?g.call(n(a),this[0]):g.call(this,a.jquery?a[0]:a):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(n.unique(n.merge(this.get(),n(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){while((a=a[b])&&1!==a.nodeType);return a}n.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return n.dir(a,"parentNode")},parentsUntil:function(a,b,c){return n.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return n.dir(a,"nextSibling")},prevAll:function(a){return n.dir(a,"previousSibling")},nextUntil:function(a,b,c){return n.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return n.dir(a,"previousSibling",c)},siblings:function(a){return n.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return n.sibling(a.firstChild)},contents:function(a){return a.contentDocument||n.merge([],a.childNodes)}},function(a,b){n.fn[a]=function(c,d){var e=n.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=n.filter(d,e)),this.length>1&&(C[a]||n.unique(e),B.test(a)&&e.reverse()),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return n.each(a.match(E)||[],function(a,c){b[c]=!0}),b}n.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):n.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(b=a.memory&&l,c=!0,g=e||0,e=0,f=h.length,d=!0;h&&f>g;g++)if(h[g].apply(l[0],l[1])===!1&&a.stopOnFalse){b=!1;break}d=!1,h&&(i?i.length&&j(i.shift()):b?h=[]:k.disable())},k={add:function(){if(h){var c=h.length;!function g(b){n.each(b,function(b,c){var d=n.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&g(c)})}(arguments),d?f=h.length:b&&(e=c,j(b))}return this},remove:function(){return h&&n.each(arguments,function(a,b){var c;while((c=n.inArray(b,h,c))>-1)h.splice(c,1),d&&(f>=c&&f--,g>=c&&g--)}),this},has:function(a){return a?n.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],f=0,this},disable:function(){return h=i=b=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,b||k.disable(),this},locked:function(){return!i},fireWith:function(a,b){return!h||c&&!i||(b=b||[],b=[a,b.slice?b.slice():b],d?i.push(b):j(b)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!c}};return k},n.extend({Deferred:function(a){var b=[["resolve","done",n.Callbacks("once memory"),"resolved"],["reject","fail",n.Callbacks("once memory"),"rejected"],["notify","progress",n.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return n.Deferred(function(c){n.each(b,function(b,f){var g=n.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&n.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?n.extend(a,d):d}},e={};return d.pipe=d.then,n.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&n.isFunction(a.promise)?e:0,g=1===f?a:n.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&n.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;n.fn.ready=function(a){return n.ready.promise().done(a),this},n.extend({isReady:!1,readyWait:1,holdReady:function(a){a?n.readyWait++:n.ready(!0)},ready:function(a){(a===!0?--n.readyWait:n.isReady)||(n.isReady=!0,a!==!0&&--n.readyWait>0||(H.resolveWith(l,[n]),n.fn.triggerHandler&&(n(l).triggerHandler("ready"),n(l).off("ready"))))}});function I(){l.removeEventListener("DOMContentLoaded",I,!1),a.removeEventListener("load",I,!1),n.ready()}n.ready.promise=function(b){return H||(H=n.Deferred(),"complete"===l.readyState?setTimeout(n.ready):(l.addEventListener("DOMContentLoaded",I,!1),a.addEventListener("load",I,!1))),H.promise(b)},n.ready.promise();var J=n.access=function(a,b,c,d,e,f,g){var h=0,i=a.length,j=null==c;if("object"===n.type(c)){e=!0;for(h in c)n.access(a,b,h,c[h],!0,f,g)}else if(void 0!==d&&(e=!0,n.isFunction(d)||(g=!0),j&&(g?(b.call(a,d),b=null):(j=b,b=function(a,b,c){return j.call(n(a),c)})),b))for(;i>h;h++)b(a[h],c,g?d:d.call(a[h],h,b(a[h],c)));return e?a:j?b.call(a):i?b(a[0],c):f};n.acceptData=function(a){return 1===a.nodeType||9===a.nodeType||!+a.nodeType};function K(){Object.defineProperty(this.cache={},0,{get:function(){return{}}}),this.expando=n.expando+K.uid++}K.uid=1,K.accepts=n.acceptData,K.prototype={key:function(a){if(!K.accepts(a))return 0;var b={},c=a[this.expando];if(!c){c=K.uid++;try{b[this.expando]={value:c},Object.defineProperties(a,b)}catch(d){b[this.expando]=c,n.extend(a,b)}}return this.cache[c]||(this.cache[c]={}),c},set:function(a,b,c){var d,e=this.key(a),f=this.cache[e];if("string"==typeof b)f[b]=c;else if(n.isEmptyObject(f))n.extend(this.cache[e],b);else for(d in b)f[d]=b[d];return f},get:function(a,b){var c=this.cache[this.key(a)];return void 0===b?c:c[b]},access:function(a,b,c){var d;return void 0===b||b&&"string"==typeof b&&void 0===c?(d=this.get(a,b),void 0!==d?d:this.get(a,n.camelCase(b))):(this.set(a,b,c),void 0!==c?c:b)},remove:function(a,b){var c,d,e,f=this.key(a),g=this.cache[f];if(void 0===b)this.cache[f]={};else{n.isArray(b)?d=b.concat(b.map(n.camelCase)):(e=n.camelCase(b),b in g?d=[b,e]:(d=e,d=d in g?[d]:d.match(E)||[])),c=d.length;while(c--)delete g[d[c]]}},hasData:function(a){return!n.isEmptyObject(this.cache[a[this.expando]]||{})},discard:function(a){a[this.expando]&&delete this.cache[a[this.expando]]}};var L=new K,M=new K,N=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,O=/([A-Z])/g;function P(a,b,c){var d;if(void 0===c&&1===a.nodeType)if(d="data-"+b.replace(O,"-$1").toLowerCase(),c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:N.test(c)?n.parseJSON(c):c}catch(e){}M.set(a,b,c)}else c=void 0;return c}n.extend({hasData:function(a){return M.hasData(a)||L.hasData(a)},data:function(a,b,c){return M.access(a,b,c)
+		},removeData:function(a,b){M.remove(a,b)},_data:function(a,b,c){return L.access(a,b,c)},_removeData:function(a,b){L.remove(a,b)}}),n.fn.extend({data:function(a,b){var c,d,e,f=this[0],g=f&&f.attributes;if(void 0===a){if(this.length&&(e=M.get(f),1===f.nodeType&&!L.get(f,"hasDataAttrs"))){c=g.length;while(c--)g[c]&&(d=g[c].name,0===d.indexOf("data-")&&(d=n.camelCase(d.slice(5)),P(f,d,e[d])));L.set(f,"hasDataAttrs",!0)}return e}return"object"==typeof a?this.each(function(){M.set(this,a)}):J(this,function(b){var c,d=n.camelCase(a);if(f&&void 0===b){if(c=M.get(f,a),void 0!==c)return c;if(c=M.get(f,d),void 0!==c)return c;if(c=P(f,d,void 0),void 0!==c)return c}else this.each(function(){var c=M.get(this,d);M.set(this,d,b),-1!==a.indexOf("-")&&void 0!==c&&M.set(this,a,b)})},null,b,arguments.length>1,null,!0)},removeData:function(a){return this.each(function(){M.remove(this,a)})}}),n.extend({queue:function(a,b,c){var d;return a?(b=(b||"fx")+"queue",d=L.get(a,b),c&&(!d||n.isArray(c)?d=L.access(a,b,n.makeArray(c)):d.push(c)),d||[]):void 0},dequeue:function(a,b){b=b||"fx";var c=n.queue(a,b),d=c.length,e=c.shift(),f=n._queueHooks(a,b),g=function(){n.dequeue(a,b)};"inprogress"===e&&(e=c.shift(),d--),e&&("fx"===b&&c.unshift("inprogress"),delete f.stop,e.call(a,g,f)),!d&&f&&f.empty.fire()},_queueHooks:function(a,b){var c=b+"queueHooks";return L.get(a,c)||L.access(a,c,{empty:n.Callbacks("once memory").add(function(){L.remove(a,[b+"queue",c])})})}}),n.fn.extend({queue:function(a,b){var c=2;return"string"!=typeof a&&(b=a,a="fx",c--),arguments.length<c?n.queue(this[0],a):void 0===b?this:this.each(function(){var c=n.queue(this,a,b);n._queueHooks(this,a),"fx"===a&&"inprogress"!==c[0]&&n.dequeue(this,a)})},dequeue:function(a){return this.each(function(){n.dequeue(this,a)})},clearQueue:function(a){return this.queue(a||"fx",[])},promise:function(a,b){var c,d=1,e=n.Deferred(),f=this,g=this.length,h=function(){--d||e.resolveWith(f,[f])};"string"!=typeof a&&(b=a,a=void 0),a=a||"fx";while(g--)c=L.get(f[g],a+"queueHooks"),c&&c.empty&&(d++,c.empty.add(h));return h(),e.promise(b)}});var Q=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,R=["Top","Right","Bottom","Left"],S=function(a,b){return a=b||a,"none"===n.css(a,"display")||!n.contains(a.ownerDocument,a)},T=/^(?:checkbox|radio)$/i;!function(){var a=l.createDocumentFragment(),b=a.appendChild(l.createElement("div")),c=l.createElement("input");c.setAttribute("type","radio"),c.setAttribute("checked","checked"),c.setAttribute("name","t"),b.appendChild(c),k.checkClone=b.cloneNode(!0).cloneNode(!0).lastChild.checked,b.innerHTML="<textarea>x</textarea>",k.noCloneChecked=!!b.cloneNode(!0).lastChild.defaultValue}();var U="undefined";k.focusinBubbles="onfocusin"in a;var V=/^key/,W=/^(?:mouse|pointer|contextmenu)|click/,X=/^(?:focusinfocus|focusoutblur)$/,Y=/^([^.]*)(?:\.(.+)|)$/;function Z(){return!0}function $(){return!1}function _(){try{return l.activeElement}catch(a){}}n.event={global:{},add:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,o,p,q,r=L.get(a);if(r){c.handler&&(f=c,c=f.handler,e=f.selector),c.guid||(c.guid=n.guid++),(i=r.events)||(i=r.events={}),(g=r.handle)||(g=r.handle=function(b){return typeof n!==U&&n.event.triggered!==b.type?n.event.dispatch.apply(a,arguments):void 0}),b=(b||"").match(E)||[""],j=b.length;while(j--)h=Y.exec(b[j])||[],o=q=h[1],p=(h[2]||"").split(".").sort(),o&&(l=n.event.special[o]||{},o=(e?l.delegateType:l.bindType)||o,l=n.event.special[o]||{},k=n.extend({type:o,origType:q,data:d,handler:c,guid:c.guid,selector:e,needsContext:e&&n.expr.match.needsContext.test(e),namespace:p.join(".")},f),(m=i[o])||(m=i[o]=[],m.delegateCount=0,l.setup&&l.setup.call(a,d,p,g)!==!1||a.addEventListener&&a.addEventListener(o,g,!1)),l.add&&(l.add.call(a,k),k.handler.guid||(k.handler.guid=c.guid)),e?m.splice(m.delegateCount++,0,k):m.push(k),n.event.global[o]=!0)}},remove:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,o,p,q,r=L.hasData(a)&&L.get(a);if(r&&(i=r.events)){b=(b||"").match(E)||[""],j=b.length;while(j--)if(h=Y.exec(b[j])||[],o=q=h[1],p=(h[2]||"").split(".").sort(),o){l=n.event.special[o]||{},o=(d?l.delegateType:l.bindType)||o,m=i[o]||[],h=h[2]&&new RegExp("(^|\\.)"+p.join("\\.(?:.*\\.|)")+"(\\.|$)"),g=f=m.length;while(f--)k=m[f],!e&&q!==k.origType||c&&c.guid!==k.guid||h&&!h.test(k.namespace)||d&&d!==k.selector&&("**"!==d||!k.selector)||(m.splice(f,1),k.selector&&m.delegateCount--,l.remove&&l.remove.call(a,k));g&&!m.length&&(l.teardown&&l.teardown.call(a,p,r.handle)!==!1||n.removeEvent(a,o,r.handle),delete i[o])}else for(o in i)n.event.remove(a,o+b[j],c,d,!0);n.isEmptyObject(i)&&(delete r.handle,L.remove(a,"events"))}},trigger:function(b,c,d,e){var f,g,h,i,k,m,o,p=[d||l],q=j.call(b,"type")?b.type:b,r=j.call(b,"namespace")?b.namespace.split("."):[];if(g=h=d=d||l,3!==d.nodeType&&8!==d.nodeType&&!X.test(q+n.event.triggered)&&(q.indexOf(".")>=0&&(r=q.split("."),q=r.shift(),r.sort()),k=q.indexOf(":")<0&&"on"+q,b=b[n.expando]?b:new n.Event(q,"object"==typeof b&&b),b.isTrigger=e?2:3,b.namespace=r.join("."),b.namespace_re=b.namespace?new RegExp("(^|\\.)"+r.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,b.result=void 0,b.target||(b.target=d),c=null==c?[b]:n.makeArray(c,[b]),o=n.event.special[q]||{},e||!o.trigger||o.trigger.apply(d,c)!==!1)){if(!e&&!o.noBubble&&!n.isWindow(d)){for(i=o.delegateType||q,X.test(i+q)||(g=g.parentNode);g;g=g.parentNode)p.push(g),h=g;h===(d.ownerDocument||l)&&p.push(h.defaultView||h.parentWindow||a)}f=0;while((g=p[f++])&&!b.isPropagationStopped())b.type=f>1?i:o.bindType||q,m=(L.get(g,"events")||{})[b.type]&&L.get(g,"handle"),m&&m.apply(g,c),m=k&&g[k],m&&m.apply&&n.acceptData(g)&&(b.result=m.apply(g,c),b.result===!1&&b.preventDefault());return b.type=q,e||b.isDefaultPrevented()||o._default&&o._default.apply(p.pop(),c)!==!1||!n.acceptData(d)||k&&n.isFunction(d[q])&&!n.isWindow(d)&&(h=d[k],h&&(d[k]=null),n.event.triggered=q,d[q](),n.event.triggered=void 0,h&&(d[k]=h)),b.result}},dispatch:function(a){a=n.event.fix(a);var b,c,e,f,g,h=[],i=d.call(arguments),j=(L.get(this,"events")||{})[a.type]||[],k=n.event.special[a.type]||{};if(i[0]=a,a.delegateTarget=this,!k.preDispatch||k.preDispatch.call(this,a)!==!1){h=n.event.handlers.call(this,a,j),b=0;while((f=h[b++])&&!a.isPropagationStopped()){a.currentTarget=f.elem,c=0;while((g=f.handlers[c++])&&!a.isImmediatePropagationStopped())(!a.namespace_re||a.namespace_re.test(g.namespace))&&(a.handleObj=g,a.data=g.data,e=((n.event.special[g.origType]||{}).handle||g.handler).apply(f.elem,i),void 0!==e&&(a.result=e)===!1&&(a.preventDefault(),a.stopPropagation()))}return k.postDispatch&&k.postDispatch.call(this,a),a.result}},handlers:function(a,b){var c,d,e,f,g=[],h=b.delegateCount,i=a.target;if(h&&i.nodeType&&(!a.button||"click"!==a.type))for(;i!==this;i=i.parentNode||this)if(i.disabled!==!0||"click"!==a.type){for(d=[],c=0;h>c;c++)f=b[c],e=f.selector+" ",void 0===d[e]&&(d[e]=f.needsContext?n(e,this).index(i)>=0:n.find(e,this,null,[i]).length),d[e]&&d.push(f);d.length&&g.push({elem:i,handlers:d})}return h<b.length&&g.push({elem:this,handlers:b.slice(h)}),g},props:"altKey bubbles cancelable ctrlKey currentTarget eventPhase metaKey relatedTarget shiftKey target timeStamp view which".split(" "),fixHooks:{},keyHooks:{props:"char charCode key keyCode".split(" "),filter:function(a,b){return null==a.which&&(a.which=null!=b.charCode?b.charCode:b.keyCode),a}},mouseHooks:{props:"button buttons clientX clientY offsetX offsetY pageX pageY screenX screenY toElement".split(" "),filter:function(a,b){var c,d,e,f=b.button;return null==a.pageX&&null!=b.clientX&&(c=a.target.ownerDocument||l,d=c.documentElement,e=c.body,a.pageX=b.clientX+(d&&d.scrollLeft||e&&e.scrollLeft||0)-(d&&d.clientLeft||e&&e.clientLeft||0),a.pageY=b.clientY+(d&&d.scrollTop||e&&e.scrollTop||0)-(d&&d.clientTop||e&&e.clientTop||0)),a.which||void 0===f||(a.which=1&f?1:2&f?3:4&f?2:0),a}},fix:function(a){if(a[n.expando])return a;var b,c,d,e=a.type,f=a,g=this.fixHooks[e];g||(this.fixHooks[e]=g=W.test(e)?this.mouseHooks:V.test(e)?this.keyHooks:{}),d=g.props?this.props.concat(g.props):this.props,a=new n.Event(f),b=d.length;while(b--)c=d[b],a[c]=f[c];return a.target||(a.target=l),3===a.target.nodeType&&(a.target=a.target.parentNode),g.filter?g.filter(a,f):a},special:{load:{noBubble:!0},focus:{trigger:function(){return this!==_()&&this.focus?(this.focus(),!1):void 0},delegateType:"focusin"},blur:{trigger:function(){return this===_()&&this.blur?(this.blur(),!1):void 0},delegateType:"focusout"},click:{trigger:function(){return"checkbox"===this.type&&this.click&&n.nodeName(this,"input")?(this.click(),!1):void 0},_default:function(a){return n.nodeName(a.target,"a")}},beforeunload:{postDispatch:function(a){void 0!==a.result&&a.originalEvent&&(a.originalEvent.returnValue=a.result)}}},simulate:function(a,b,c,d){var e=n.extend(new n.Event,c,{type:a,isSimulated:!0,originalEvent:{}});d?n.event.trigger(e,null,b):n.event.dispatch.call(b,e),e.isDefaultPrevented()&&c.preventDefault()}},n.removeEvent=function(a,b,c){a.removeEventListener&&a.removeEventListener(b,c,!1)},n.Event=function(a,b){return this instanceof n.Event?(a&&a.type?(this.originalEvent=a,this.type=a.type,this.isDefaultPrevented=a.defaultPrevented||void 0===a.defaultPrevented&&a.returnValue===!1?Z:$):this.type=a,b&&n.extend(this,b),this.timeStamp=a&&a.timeStamp||n.now(),void(this[n.expando]=!0)):new n.Event(a,b)},n.Event.prototype={isDefaultPrevented:$,isPropagationStopped:$,isImmediatePropagationStopped:$,preventDefault:function(){var a=this.originalEvent;this.isDefaultPrevented=Z,a&&a.preventDefault&&a.preventDefault()},stopPropagation:function(){var a=this.originalEvent;this.isPropagationStopped=Z,a&&a.stopPropagation&&a.stopPropagation()},stopImmediatePropagation:function(){var a=this.originalEvent;this.isImmediatePropagationStopped=Z,a&&a.stopImmediatePropagation&&a.stopImmediatePropagation(),this.stopPropagation()}},n.each({mouseenter:"mouseover",mouseleave:"mouseout",pointerenter:"pointerover",pointerleave:"pointerout"},function(a,b){n.event.special[a]={delegateType:b,bindType:b,handle:function(a){var c,d=this,e=a.relatedTarget,f=a.handleObj;return(!e||e!==d&&!n.contains(d,e))&&(a.type=f.origType,c=f.handler.apply(this,arguments),a.type=b),c}}}),k.focusinBubbles||n.each({focus:"focusin",blur:"focusout"},function(a,b){var c=function(a){n.event.simulate(b,a.target,n.event.fix(a),!0)};n.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=L.access(d,b);e||d.addEventListener(a,c,!0),L.access(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=L.access(d,b)-1;e?L.access(d,b,e):(d.removeEventListener(a,c,!0),L.remove(d,b))}}}),n.fn.extend({on:function(a,b,c,d,e){var f,g;if("object"==typeof a){"string"!=typeof b&&(c=c||b,b=void 0);for(g in a)this.on(g,b,c,a[g],e);return this}if(null==c&&null==d?(d=b,c=b=void 0):null==d&&("string"==typeof b?(d=c,c=void 0):(d=c,c=b,b=void 0)),d===!1)d=$;else if(!d)return this;return 1===e&&(f=d,d=function(a){return n().off(a),f.apply(this,arguments)},d.guid=f.guid||(f.guid=n.guid++)),this.each(function(){n.event.add(this,a,d,c,b)})},one:function(a,b,c,d){return this.on(a,b,c,d,1)},off:function(a,b,c){var d,e;if(a&&a.preventDefault&&a.handleObj)return d=a.handleObj,n(a.delegateTarget).off(d.namespace?d.origType+"."+d.namespace:d.origType,d.selector,d.handler),this;if("object"==typeof a){for(e in a)this.off(e,b,a[e]);return this}return(b===!1||"function"==typeof b)&&(c=b,b=void 0),c===!1&&(c=$),this.each(function(){n.event.remove(this,a,c,b)})},trigger:function(a,b){return this.each(function(){n.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];return c?n.event.trigger(a,b,c,!0):void 0}});var ab=/<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,bb=/<([\w:]+)/,cb=/<|&#?\w+;/,db=/<(?:script|style|link)/i,eb=/checked\s*(?:[^=]|=\s*.checked.)/i,fb=/^$|\/(?:java|ecma)script/i,gb=/^true\/(.*)/,hb=/^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g,ib={option:[1,"<select multiple='multiple'>","</select>"],thead:[1,"<table>","</table>"],col:[2,"<table><colgroup>","</colgroup></table>"],tr:[2,"<table><tbody>","</tbody></table>"],td:[3,"<table><tbody><tr>","</tr></tbody></table>"],_default:[0,"",""]};ib.optgroup=ib.option,ib.tbody=ib.tfoot=ib.colgroup=ib.caption=ib.thead,ib.th=ib.td;function jb(a,b){return n.nodeName(a,"table")&&n.nodeName(11!==b.nodeType?b:b.firstChild,"tr")?a.getElementsByTagName("tbody")[0]||a.appendChild(a.ownerDocument.createElement("tbody")):a}function kb(a){return a.type=(null!==a.getAttribute("type"))+"/"+a.type,a}function lb(a){var b=gb.exec(a.type);return b?a.type=b[1]:a.removeAttribute("type"),a}function mb(a,b){for(var c=0,d=a.length;d>c;c++)L.set(a[c],"globalEval",!b||L.get(b[c],"globalEval"))}function nb(a,b){var c,d,e,f,g,h,i,j;if(1===b.nodeType){if(L.hasData(a)&&(f=L.access(a),g=L.set(b,f),j=f.events)){delete g.handle,g.events={};for(e in j)for(c=0,d=j[e].length;d>c;c++)n.event.add(b,e,j[e][c])}M.hasData(a)&&(h=M.access(a),i=n.extend({},h),M.set(b,i))}}function ob(a,b){var c=a.getElementsByTagName?a.getElementsByTagName(b||"*"):a.querySelectorAll?a.querySelectorAll(b||"*"):[];return void 0===b||b&&n.nodeName(a,b)?n.merge([a],c):c}function pb(a,b){var c=b.nodeName.toLowerCase();"input"===c&&T.test(a.type)?b.checked=a.checked:("input"===c||"textarea"===c)&&(b.defaultValue=a.defaultValue)}n.extend({clone:function(a,b,c){var d,e,f,g,h=a.cloneNode(!0),i=n.contains(a.ownerDocument,a);if(!(k.noCloneChecked||1!==a.nodeType&&11!==a.nodeType||n.isXMLDoc(a)))for(g=ob(h),f=ob(a),d=0,e=f.length;e>d;d++)pb(f[d],g[d]);if(b)if(c)for(f=f||ob(a),g=g||ob(h),d=0,e=f.length;e>d;d++)nb(f[d],g[d]);else nb(a,h);return g=ob(h,"script"),g.length>0&&mb(g,!i&&ob(a,"script")),h},buildFragment:function(a,b,c,d){for(var e,f,g,h,i,j,k=b.createDocumentFragment(),l=[],m=0,o=a.length;o>m;m++)if(e=a[m],e||0===e)if("object"===n.type(e))n.merge(l,e.nodeType?[e]:e);else if(cb.test(e)){f=f||k.appendChild(b.createElement("div")),g=(bb.exec(e)||["",""])[1].toLowerCase(),h=ib[g]||ib._default,f.innerHTML=h[1]+e.replace(ab,"<$1></$2>")+h[2],j=h[0];while(j--)f=f.lastChild;n.merge(l,f.childNodes),f=k.firstChild,f.textContent=""}else l.push(b.createTextNode(e));k.textContent="",m=0;while(e=l[m++])if((!d||-1===n.inArray(e,d))&&(i=n.contains(e.ownerDocument,e),f=ob(k.appendChild(e),"script"),i&&mb(f),c)){j=0;while(e=f[j++])fb.test(e.type||"")&&c.push(e)}return k},cleanData:function(a){for(var b,c,d,e,f=n.event.special,g=0;void 0!==(c=a[g]);g++){if(n.acceptData(c)&&(e=c[L.expando],e&&(b=L.cache[e]))){if(b.events)for(d in b.events)f[d]?n.event.remove(c,d):n.removeEvent(c,d,b.handle);L.cache[e]&&delete L.cache[e]}delete M.cache[c[M.expando]]}}}),n.fn.extend({text:function(a){return J(this,function(a){return void 0===a?n.text(this):this.empty().each(function(){(1===this.nodeType||11===this.nodeType||9===this.nodeType)&&(this.textContent=a)})},null,a,arguments.length)},append:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=jb(this,a);b.appendChild(a)}})},prepend:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=jb(this,a);b.insertBefore(a,b.firstChild)}})},before:function(){return this.domManip(arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this)})},after:function(){return this.domManip(arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this.nextSibling)})},remove:function(a,b){for(var c,d=a?n.filter(a,this):this,e=0;null!=(c=d[e]);e++)b||1!==c.nodeType||n.cleanData(ob(c)),c.parentNode&&(b&&n.contains(c.ownerDocument,c)&&mb(ob(c,"script")),c.parentNode.removeChild(c));return this},empty:function(){for(var a,b=0;null!=(a=this[b]);b++)1===a.nodeType&&(n.cleanData(ob(a,!1)),a.textContent="");return this},clone:function(a,b){return a=null==a?!1:a,b=null==b?a:b,this.map(function(){return n.clone(this,a,b)})},html:function(a){return J(this,function(a){var b=this[0]||{},c=0,d=this.length;if(void 0===a&&1===b.nodeType)return b.innerHTML;if("string"==typeof a&&!db.test(a)&&!ib[(bb.exec(a)||["",""])[1].toLowerCase()]){a=a.replace(ab,"<$1></$2>");try{for(;d>c;c++)b=this[c]||{},1===b.nodeType&&(n.cleanData(ob(b,!1)),b.innerHTML=a);b=0}catch(e){}}b&&this.empty().append(a)},null,a,arguments.length)},replaceWith:function(){var a=arguments[0];return this.domManip(arguments,function(b){a=this.parentNode,n.cleanData(ob(this)),a&&a.replaceChild(b,this)}),a&&(a.length||a.nodeType)?this:this.remove()},detach:function(a){return this.remove(a,!0)},domManip:function(a,b){a=e.apply([],a);var c,d,f,g,h,i,j=0,l=this.length,m=this,o=l-1,p=a[0],q=n.isFunction(p);if(q||l>1&&"string"==typeof p&&!k.checkClone&&eb.test(p))return this.each(function(c){var d=m.eq(c);q&&(a[0]=p.call(this,c,d.html())),d.domManip(a,b)});if(l&&(c=n.buildFragment(a,this[0].ownerDocument,!1,this),d=c.firstChild,1===c.childNodes.length&&(c=d),d)){for(f=n.map(ob(c,"script"),kb),g=f.length;l>j;j++)h=c,j!==o&&(h=n.clone(h,!0,!0),g&&n.merge(f,ob(h,"script"))),b.call(this[j],h,j);if(g)for(i=f[f.length-1].ownerDocument,n.map(f,lb),j=0;g>j;j++)h=f[j],fb.test(h.type||"")&&!L.access(h,"globalEval")&&n.contains(i,h)&&(h.src?n._evalUrl&&n._evalUrl(h.src):n.globalEval(h.textContent.replace(hb,"")))}return this}}),n.each({appendTo:"append",prependTo:"prepend",insertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},function(a,b){n.fn[a]=function(a){for(var c,d=[],e=n(a),g=e.length-1,h=0;g>=h;h++)c=h===g?this:this.clone(!0),n(e[h])[b](c),f.apply(d,c.get());return this.pushStack(d)}});var qb,rb={};function sb(b,c){var d,e=n(c.createElement(b)).appendTo(c.body),f=a.getDefaultComputedStyle&&(d=a.getDefaultComputedStyle(e[0]))?d.display:n.css(e[0],"display");return e.detach(),f}function tb(a){var b=l,c=rb[a];return c||(c=sb(a,b),"none"!==c&&c||(qb=(qb||n("<iframe frameborder='0' width='0' height='0'/>")).appendTo(b.documentElement),b=qb[0].contentDocument,b.write(),b.close(),c=sb(a,b),qb.detach()),rb[a]=c),c}var ub=/^margin/,vb=new RegExp("^("+Q+")(?!px)[a-z%]+$","i"),wb=function(b){return b.ownerDocument.defaultView.opener?b.ownerDocument.defaultView.getComputedStyle(b,null):a.getComputedStyle(b,null)};function xb(a,b,c){var d,e,f,g,h=a.style;return c=c||wb(a),c&&(g=c.getPropertyValue(b)||c[b]),c&&(""!==g||n.contains(a.ownerDocument,a)||(g=n.style(a,b)),vb.test(g)&&ub.test(b)&&(d=h.width,e=h.minWidth,f=h.maxWidth,h.minWidth=h.maxWidth=h.width=g,g=c.width,h.width=d,h.minWidth=e,h.maxWidth=f)),void 0!==g?g+"":g}function yb(a,b){return{get:function(){return a()?void delete this.get:(this.get=b).apply(this,arguments)}}}!function(){var b,c,d=l.documentElement,e=l.createElement("div"),f=l.createElement("div");if(f.style){f.style.backgroundClip="content-box",f.cloneNode(!0).style.backgroundClip="",k.clearCloneStyle="content-box"===f.style.backgroundClip,e.style.cssText="border:0;width:0;height:0;top:0;left:-9999px;margin-top:1px;position:absolute",e.appendChild(f);function g(){f.style.cssText="-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;margin-top:1%;top:1%;border:1px;padding:1px;width:4px;position:absolute",f.innerHTML="",d.appendChild(e);var g=a.getComputedStyle(f,null);b="1%"!==g.top,c="4px"===g.width,d.removeChild(e)}a.getComputedStyle&&n.extend(k,{pixelPosition:function(){return g(),b},boxSizingReliable:function(){return null==c&&g(),c},reliableMarginRight:function(){var b,c=f.appendChild(l.createElement("div"));return c.style.cssText=f.style.cssText="-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:block;margin:0;border:0;padding:0",c.style.marginRight=c.style.width="0",f.style.width="1px",d.appendChild(e),b=!parseFloat(a.getComputedStyle(c,null).marginRight),d.removeChild(e),f.removeChild(c),b}})}}(),n.swap=function(a,b,c,d){var e,f,g={};for(f in b)g[f]=a.style[f],a.style[f]=b[f];e=c.apply(a,d||[]);for(f in b)a.style[f]=g[f];return e};var zb=/^(none|table(?!-c[ea]).+)/,Ab=new RegExp("^("+Q+")(.*)$","i"),Bb=new RegExp("^([+-])=("+Q+")","i"),Cb={position:"absolute",visibility:"hidden",display:"block"},Db={letterSpacing:"0",fontWeight:"400"},Eb=["Webkit","O","Moz","ms"];function Fb(a,b){if(b in a)return b;var c=b[0].toUpperCase()+b.slice(1),d=b,e=Eb.length;while(e--)if(b=Eb[e]+c,b in a)return b;return d}function Gb(a,b,c){var d=Ab.exec(b);return d?Math.max(0,d[1]-(c||0))+(d[2]||"px"):b}function Hb(a,b,c,d,e){for(var f=c===(d?"border":"content")?4:"width"===b?1:0,g=0;4>f;f+=2)"margin"===c&&(g+=n.css(a,c+R[f],!0,e)),d?("content"===c&&(g-=n.css(a,"padding"+R[f],!0,e)),"margin"!==c&&(g-=n.css(a,"border"+R[f]+"Width",!0,e))):(g+=n.css(a,"padding"+R[f],!0,e),"padding"!==c&&(g+=n.css(a,"border"+R[f]+"Width",!0,e)));return g}function Ib(a,b,c){var d=!0,e="width"===b?a.offsetWidth:a.offsetHeight,f=wb(a),g="border-box"===n.css(a,"boxSizing",!1,f);if(0>=e||null==e){if(e=xb(a,b,f),(0>e||null==e)&&(e=a.style[b]),vb.test(e))return e;d=g&&(k.boxSizingReliable()||e===a.style[b]),e=parseFloat(e)||0}return e+Hb(a,b,c||(g?"border":"content"),d,f)+"px"}function Jb(a,b){for(var c,d,e,f=[],g=0,h=a.length;h>g;g++)d=a[g],d.style&&(f[g]=L.get(d,"olddisplay"),c=d.style.display,b?(f[g]||"none"!==c||(d.style.display=""),""===d.style.display&&S(d)&&(f[g]=L.access(d,"olddisplay",tb(d.nodeName)))):(e=S(d),"none"===c&&e||L.set(d,"olddisplay",e?c:n.css(d,"display"))));for(g=0;h>g;g++)d=a[g],d.style&&(b&&"none"!==d.style.display&&""!==d.style.display||(d.style.display=b?f[g]||"":"none"));return a}n.extend({cssHooks:{opacity:{get:function(a,b){if(b){var c=xb(a,"opacity");return""===c?"1":c}}}},cssNumber:{columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{"float":"cssFloat"},style:function(a,b,c,d){if(a&&3!==a.nodeType&&8!==a.nodeType&&a.style){var e,f,g,h=n.camelCase(b),i=a.style;return b=n.cssProps[h]||(n.cssProps[h]=Fb(i,h)),g=n.cssHooks[b]||n.cssHooks[h],void 0===c?g&&"get"in g&&void 0!==(e=g.get(a,!1,d))?e:i[b]:(f=typeof c,"string"===f&&(e=Bb.exec(c))&&(c=(e[1]+1)*e[2]+parseFloat(n.css(a,b)),f="number"),null!=c&&c===c&&("number"!==f||n.cssNumber[h]||(c+="px"),k.clearCloneStyle||""!==c||0!==b.indexOf("background")||(i[b]="inherit"),g&&"set"in g&&void 0===(c=g.set(a,c,d))||(i[b]=c)),void 0)}},css:function(a,b,c,d){var e,f,g,h=n.camelCase(b);return b=n.cssProps[h]||(n.cssProps[h]=Fb(a.style,h)),g=n.cssHooks[b]||n.cssHooks[h],g&&"get"in g&&(e=g.get(a,!0,c)),void 0===e&&(e=xb(a,b,d)),"normal"===e&&b in Db&&(e=Db[b]),""===c||c?(f=parseFloat(e),c===!0||n.isNumeric(f)?f||0:e):e}}),n.each(["height","width"],function(a,b){n.cssHooks[b]={get:function(a,c,d){return c?zb.test(n.css(a,"display"))&&0===a.offsetWidth?n.swap(a,Cb,function(){return Ib(a,b,d)}):Ib(a,b,d):void 0},set:function(a,c,d){var e=d&&wb(a);return Gb(a,c,d?Hb(a,b,d,"border-box"===n.css(a,"boxSizing",!1,e),e):0)}}}),n.cssHooks.marginRight=yb(k.reliableMarginRight,function(a,b){return b?n.swap(a,{display:"inline-block"},xb,[a,"marginRight"]):void 0}),n.each({margin:"",padding:"",border:"Width"},function(a,b){n.cssHooks[a+b]={expand:function(c){for(var d=0,e={},f="string"==typeof c?c.split(" "):[c];4>d;d++)e[a+R[d]+b]=f[d]||f[d-2]||f[0];return e}},ub.test(a)||(n.cssHooks[a+b].set=Gb)}),n.fn.extend({css:function(a,b){return J(this,function(a,b,c){var d,e,f={},g=0;if(n.isArray(b)){for(d=wb(a),e=b.length;e>g;g++)f[b[g]]=n.css(a,b[g],!1,d);return f}return void 0!==c?n.style(a,b,c):n.css(a,b)},a,b,arguments.length>1)},show:function(){return Jb(this,!0)},hide:function(){return Jb(this)},toggle:function(a){return"boolean"==typeof a?a?this.show():this.hide():this.each(function(){S(this)?n(this).show():n(this).hide()})}});function Kb(a,b,c,d,e){return new Kb.prototype.init(a,b,c,d,e)}n.Tween=Kb,Kb.prototype={constructor:Kb,init:function(a,b,c,d,e,f){this.elem=a,this.prop=c,this.easing=e||"swing",this.options=b,this.start=this.now=this.cur(),this.end=d,this.unit=f||(n.cssNumber[c]?"":"px")},cur:function(){var a=Kb.propHooks[this.prop];return a&&a.get?a.get(this):Kb.propHooks._default.get(this)},run:function(a){var b,c=Kb.propHooks[this.prop];return this.pos=b=this.options.duration?n.easing[this.easing](a,this.options.duration*a,0,1,this.options.duration):a,this.now=(this.end-this.start)*b+this.start,this.options.step&&this.options.step.call(this.elem,this.now,this),c&&c.set?c.set(this):Kb.propHooks._default.set(this),this}},Kb.prototype.init.prototype=Kb.prototype,Kb.propHooks={_default:{get:function(a){var b;return null==a.elem[a.prop]||a.elem.style&&null!=a.elem.style[a.prop]?(b=n.css(a.elem,a.prop,""),b&&"auto"!==b?b:0):a.elem[a.prop]},set:function(a){n.fx.step[a.prop]?n.fx.step[a.prop](a):a.elem.style&&(null!=a.elem.style[n.cssProps[a.prop]]||n.cssHooks[a.prop])?n.style(a.elem,a.prop,a.now+a.unit):a.elem[a.prop]=a.now}}},Kb.propHooks.scrollTop=Kb.propHooks.scrollLeft={set:function(a){a.elem.nodeType&&a.elem.parentNode&&(a.elem[a.prop]=a.now)}},n.easing={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2}},n.fx=Kb.prototype.init,n.fx.step={};var Lb,Mb,Nb=/^(?:toggle|show|hide)$/,Ob=new RegExp("^(?:([+-])=|)("+Q+")([a-z%]*)$","i"),Pb=/queueHooks$/,Qb=[Vb],Rb={"*":[function(a,b){var c=this.createTween(a,b),d=c.cur(),e=Ob.exec(b),f=e&&e[3]||(n.cssNumber[a]?"":"px"),g=(n.cssNumber[a]||"px"!==f&&+d)&&Ob.exec(n.css(c.elem,a)),h=1,i=20;if(g&&g[3]!==f){f=f||g[3],e=e||[],g=+d||1;do h=h||".5",g/=h,n.style(c.elem,a,g+f);while(h!==(h=c.cur()/d)&&1!==h&&--i)}return e&&(g=c.start=+g||+d||0,c.unit=f,c.end=e[1]?g+(e[1]+1)*e[2]:+e[2]),c}]};function Sb(){return setTimeout(function(){Lb=void 0}),Lb=n.now()}function Tb(a,b){var c,d=0,e={height:a};for(b=b?1:0;4>d;d+=2-b)c=R[d],e["margin"+c]=e["padding"+c]=a;return b&&(e.opacity=e.width=a),e}function Ub(a,b,c){for(var d,e=(Rb[b]||[]).concat(Rb["*"]),f=0,g=e.length;g>f;f++)if(d=e[f].call(c,b,a))return d}function Vb(a,b,c){var d,e,f,g,h,i,j,k,l=this,m={},o=a.style,p=a.nodeType&&S(a),q=L.get(a,"fxshow");c.queue||(h=n._queueHooks(a,"fx"),null==h.unqueued&&(h.unqueued=0,i=h.empty.fire,h.empty.fire=function(){h.unqueued||i()}),h.unqueued++,l.always(function(){l.always(function(){h.unqueued--,n.queue(a,"fx").length||h.empty.fire()})})),1===a.nodeType&&("height"in b||"width"in b)&&(c.overflow=[o.overflow,o.overflowX,o.overflowY],j=n.css(a,"display"),k="none"===j?L.get(a,"olddisplay")||tb(a.nodeName):j,"inline"===k&&"none"===n.css(a,"float")&&(o.display="inline-block")),c.overflow&&(o.overflow="hidden",l.always(function(){o.overflow=c.overflow[0],o.overflowX=c.overflow[1],o.overflowY=c.overflow[2]}));for(d in b)if(e=b[d],Nb.exec(e)){if(delete b[d],f=f||"toggle"===e,e===(p?"hide":"show")){if("show"!==e||!q||void 0===q[d])continue;p=!0}m[d]=q&&q[d]||n.style(a,d)}else j=void 0;if(n.isEmptyObject(m))"inline"===("none"===j?tb(a.nodeName):j)&&(o.display=j);else{q?"hidden"in q&&(p=q.hidden):q=L.access(a,"fxshow",{}),f&&(q.hidden=!p),p?n(a).show():l.done(function(){n(a).hide()}),l.done(function(){var b;L.remove(a,"fxshow");for(b in m)n.style(a,b,m[b])});for(d in m)g=Ub(p?q[d]:0,d,l),d in q||(q[d]=g.start,p&&(g.end=g.start,g.start="width"===d||"height"===d?1:0))}}function Wb(a,b){var c,d,e,f,g;for(c in a)if(d=n.camelCase(c),e=b[d],f=a[c],n.isArray(f)&&(e=f[1],f=a[c]=f[0]),c!==d&&(a[d]=f,delete a[c]),g=n.cssHooks[d],g&&"expand"in g){f=g.expand(f),delete a[d];for(c in f)c in a||(a[c]=f[c],b[c]=e)}else b[d]=e}function Xb(a,b,c){var d,e,f=0,g=Qb.length,h=n.Deferred().always(function(){delete i.elem}),i=function(){if(e)return!1;for(var b=Lb||Sb(),c=Math.max(0,j.startTime+j.duration-b),d=c/j.duration||0,f=1-d,g=0,i=j.tweens.length;i>g;g++)j.tweens[g].run(f);return h.notifyWith(a,[j,f,c]),1>f&&i?c:(h.resolveWith(a,[j]),!1)},j=h.promise({elem:a,props:n.extend({},b),opts:n.extend(!0,{specialEasing:{}},c),originalProperties:b,originalOptions:c,startTime:Lb||Sb(),duration:c.duration,tweens:[],createTween:function(b,c){var d=n.Tween(a,j.opts,b,c,j.opts.specialEasing[b]||j.opts.easing);return j.tweens.push(d),d},stop:function(b){var c=0,d=b?j.tweens.length:0;if(e)return this;for(e=!0;d>c;c++)j.tweens[c].run(1);return b?h.resolveWith(a,[j,b]):h.rejectWith(a,[j,b]),this}}),k=j.props;for(Wb(k,j.opts.specialEasing);g>f;f++)if(d=Qb[f].call(j,a,k,j.opts))return d;return n.map(k,Ub,j),n.isFunction(j.opts.start)&&j.opts.start.call(a,j),n.fx.timer(n.extend(i,{elem:a,anim:j,queue:j.opts.queue})),j.progress(j.opts.progress).done(j.opts.done,j.opts.complete).fail(j.opts.fail).always(j.opts.always)}n.Animation=n.extend(Xb,{tweener:function(a,b){n.isFunction(a)?(b=a,a=["*"]):a=a.split(" ");for(var c,d=0,e=a.length;e>d;d++)c=a[d],Rb[c]=Rb[c]||[],Rb[c].unshift(b)},prefilter:function(a,b){b?Qb.unshift(a):Qb.push(a)}}),n.speed=function(a,b,c){var d=a&&"object"==typeof a?n.extend({},a):{complete:c||!c&&b||n.isFunction(a)&&a,duration:a,easing:c&&b||b&&!n.isFunction(b)&&b};return d.duration=n.fx.off?0:"number"==typeof d.duration?d.duration:d.duration in n.fx.speeds?n.fx.speeds[d.duration]:n.fx.speeds._default,(null==d.queue||d.queue===!0)&&(d.queue="fx"),d.old=d.complete,d.complete=function(){n.isFunction(d.old)&&d.old.call(this),d.queue&&n.dequeue(this,d.queue)},d},n.fn.extend({fadeTo:function(a,b,c,d){return this.filter(S).css("opacity",0).show().end().animate({opacity:b},a,c,d)},animate:function(a,b,c,d){var e=n.isEmptyObject(a),f=n.speed(b,c,d),g=function(){var b=Xb(this,n.extend({},a),f);(e||L.get(this,"finish"))&&b.stop(!0)};return g.finish=g,e||f.queue===!1?this.each(g):this.queue(f.queue,g)},stop:function(a,b,c){var d=function(a){var b=a.stop;delete a.stop,b(c)};return"string"!=typeof a&&(c=b,b=a,a=void 0),b&&a!==!1&&this.queue(a||"fx",[]),this.each(function(){var b=!0,e=null!=a&&a+"queueHooks",f=n.timers,g=L.get(this);if(e)g[e]&&g[e].stop&&d(g[e]);else for(e in g)g[e]&&g[e].stop&&Pb.test(e)&&d(g[e]);for(e=f.length;e--;)f[e].elem!==this||null!=a&&f[e].queue!==a||(f[e].anim.stop(c),b=!1,f.splice(e,1));(b||!c)&&n.dequeue(this,a)})},finish:function(a){return a!==!1&&(a=a||"fx"),this.each(function(){var b,c=L.get(this),d=c[a+"queue"],e=c[a+"queueHooks"],f=n.timers,g=d?d.length:0;for(c.finish=!0,n.queue(this,a,[]),e&&e.stop&&e.stop.call(this,!0),b=f.length;b--;)f[b].elem===this&&f[b].queue===a&&(f[b].anim.stop(!0),f.splice(b,1));for(b=0;g>b;b++)d[b]&&d[b].finish&&d[b].finish.call(this);delete c.finish})}}),n.each(["toggle","show","hide"],function(a,b){var c=n.fn[b];n.fn[b]=function(a,d,e){return null==a||"boolean"==typeof a?c.apply(this,arguments):this.animate(Tb(b,!0),a,d,e)}}),n.each({slideDown:Tb("show"),slideUp:Tb("hide"),slideToggle:Tb("toggle"),fadeIn:{opacity:"show"},fadeOut:{opacity:"hide"},fadeToggle:{opacity:"toggle"}},function(a,b){n.fn[a]=function(a,c,d){return this.animate(b,a,c,d)}}),n.timers=[],n.fx.tick=function(){var a,b=0,c=n.timers;for(Lb=n.now();b<c.length;b++)a=c[b],a()||c[b]!==a||c.splice(b--,1);c.length||n.fx.stop(),Lb=void 0},n.fx.timer=function(a){n.timers.push(a),a()?n.fx.start():n.timers.pop()},n.fx.interval=13,n.fx.start=function(){Mb||(Mb=setInterval(n.fx.tick,n.fx.interval))},n.fx.stop=function(){clearInterval(Mb),Mb=null},n.fx.speeds={slow:600,fast:200,_default:400},n.fn.delay=function(a,b){return a=n.fx?n.fx.speeds[a]||a:a,b=b||"fx",this.queue(b,function(b,c){var d=setTimeout(b,a);c.stop=function(){clearTimeout(d)}})},function(){var a=l.createElement("input"),b=l.createElement("select"),c=b.appendChild(l.createElement("option"));a.type="checkbox",k.checkOn=""!==a.value,k.optSelected=c.selected,b.disabled=!0,k.optDisabled=!c.disabled,a=l.createElement("input"),a.value="t",a.type="radio",k.radioValue="t"===a.value}();var Yb,Zb,$b=n.expr.attrHandle;n.fn.extend({attr:function(a,b){return J(this,n.attr,a,b,arguments.length>1)},removeAttr:function(a){return this.each(function(){n.removeAttr(this,a)})}}),n.extend({attr:function(a,b,c){var d,e,f=a.nodeType;if(a&&3!==f&&8!==f&&2!==f)return typeof a.getAttribute===U?n.prop(a,b,c):(1===f&&n.isXMLDoc(a)||(b=b.toLowerCase(),d=n.attrHooks[b]||(n.expr.match.bool.test(b)?Zb:Yb)),void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?void 0:e):null!==c?d&&"set"in d&&void 0!==(e=d.set(a,c,b))?e:(a.setAttribute(b,c+""),c):void n.removeAttr(a,b))
+		},removeAttr:function(a,b){var c,d,e=0,f=b&&b.match(E);if(f&&1===a.nodeType)while(c=f[e++])d=n.propFix[c]||c,n.expr.match.bool.test(c)&&(a[d]=!1),a.removeAttribute(c)},attrHooks:{type:{set:function(a,b){if(!k.radioValue&&"radio"===b&&n.nodeName(a,"input")){var c=a.value;return a.setAttribute("type",b),c&&(a.value=c),b}}}}}),Zb={set:function(a,b,c){return b===!1?n.removeAttr(a,c):a.setAttribute(c,c),c}},n.each(n.expr.match.bool.source.match(/\w+/g),function(a,b){var c=$b[b]||n.find.attr;$b[b]=function(a,b,d){var e,f;return d||(f=$b[b],$b[b]=e,e=null!=c(a,b,d)?b.toLowerCase():null,$b[b]=f),e}});var _b=/^(?:input|select|textarea|button)$/i;n.fn.extend({prop:function(a,b){return J(this,n.prop,a,b,arguments.length>1)},removeProp:function(a){return this.each(function(){delete this[n.propFix[a]||a]})}}),n.extend({propFix:{"for":"htmlFor","class":"className"},prop:function(a,b,c){var d,e,f,g=a.nodeType;if(a&&3!==g&&8!==g&&2!==g)return f=1!==g||!n.isXMLDoc(a),f&&(b=n.propFix[b]||b,e=n.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){return a.hasAttribute("tabindex")||_b.test(a.nodeName)||a.href?a.tabIndex:-1}}}}),k.optSelected||(n.propHooks.selected={get:function(a){var b=a.parentNode;return b&&b.parentNode&&b.parentNode.selectedIndex,null}}),n.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){n.propFix[this.toLowerCase()]=this});var ac=/[\t\r\n\f]/g;n.fn.extend({addClass:function(a){var b,c,d,e,f,g,h="string"==typeof a&&a,i=0,j=this.length;if(n.isFunction(a))return this.each(function(b){n(this).addClass(a.call(this,b,this.className))});if(h)for(b=(a||"").match(E)||[];j>i;i++)if(c=this[i],d=1===c.nodeType&&(c.className?(" "+c.className+" ").replace(ac," "):" ")){f=0;while(e=b[f++])d.indexOf(" "+e+" ")<0&&(d+=e+" ");g=n.trim(d),c.className!==g&&(c.className=g)}return this},removeClass:function(a){var b,c,d,e,f,g,h=0===arguments.length||"string"==typeof a&&a,i=0,j=this.length;if(n.isFunction(a))return this.each(function(b){n(this).removeClass(a.call(this,b,this.className))});if(h)for(b=(a||"").match(E)||[];j>i;i++)if(c=this[i],d=1===c.nodeType&&(c.className?(" "+c.className+" ").replace(ac," "):"")){f=0;while(e=b[f++])while(d.indexOf(" "+e+" ")>=0)d=d.replace(" "+e+" "," ");g=a?n.trim(d):"",c.className!==g&&(c.className=g)}return this},toggleClass:function(a,b){var c=typeof a;return"boolean"==typeof b&&"string"===c?b?this.addClass(a):this.removeClass(a):this.each(n.isFunction(a)?function(c){n(this).toggleClass(a.call(this,c,this.className,b),b)}:function(){if("string"===c){var b,d=0,e=n(this),f=a.match(E)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else(c===U||"boolean"===c)&&(this.className&&L.set(this,"__className__",this.className),this.className=this.className||a===!1?"":L.get(this,"__className__")||"")})},hasClass:function(a){for(var b=" "+a+" ",c=0,d=this.length;d>c;c++)if(1===this[c].nodeType&&(" "+this[c].className+" ").replace(ac," ").indexOf(b)>=0)return!0;return!1}});var bc=/\r/g;n.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=n.isFunction(a),this.each(function(c){var e;1===this.nodeType&&(e=d?a.call(this,c,n(this).val()):a,null==e?e="":"number"==typeof e?e+="":n.isArray(e)&&(e=n.map(e,function(a){return null==a?"":a+""})),b=n.valHooks[this.type]||n.valHooks[this.nodeName.toLowerCase()],b&&"set"in b&&void 0!==b.set(this,e,"value")||(this.value=e))});if(e)return b=n.valHooks[e.type]||n.valHooks[e.nodeName.toLowerCase()],b&&"get"in b&&void 0!==(c=b.get(e,"value"))?c:(c=e.value,"string"==typeof c?c.replace(bc,""):null==c?"":c)}}}),n.extend({valHooks:{option:{get:function(a){var b=n.find.attr(a,"value");return null!=b?b:n.trim(n.text(a))}},select:{get:function(a){for(var b,c,d=a.options,e=a.selectedIndex,f="select-one"===a.type||0>e,g=f?null:[],h=f?e+1:d.length,i=0>e?h:f?e:0;h>i;i++)if(c=d[i],!(!c.selected&&i!==e||(k.optDisabled?c.disabled:null!==c.getAttribute("disabled"))||c.parentNode.disabled&&n.nodeName(c.parentNode,"optgroup"))){if(b=n(c).val(),f)return b;g.push(b)}return g},set:function(a,b){var c,d,e=a.options,f=n.makeArray(b),g=e.length;while(g--)d=e[g],(d.selected=n.inArray(d.value,f)>=0)&&(c=!0);return c||(a.selectedIndex=-1),f}}}}),n.each(["radio","checkbox"],function(){n.valHooks[this]={set:function(a,b){return n.isArray(b)?a.checked=n.inArray(n(a).val(),b)>=0:void 0}},k.checkOn||(n.valHooks[this].get=function(a){return null===a.getAttribute("value")?"on":a.value})}),n.each("blur focus focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup error contextmenu".split(" "),function(a,b){n.fn[b]=function(a,c){return arguments.length>0?this.on(b,null,a,c):this.trigger(b)}}),n.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)},bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}});var cc=n.now(),dc=/\?/;n.parseJSON=function(a){return JSON.parse(a+"")},n.parseXML=function(a){var b,c;if(!a||"string"!=typeof a)return null;try{c=new DOMParser,b=c.parseFromString(a,"text/xml")}catch(d){b=void 0}return(!b||b.getElementsByTagName("parsererror").length)&&n.error("Invalid XML: "+a),b};var ec=/#.*$/,fc=/([?&])_=[^&]*/,gc=/^(.*?):[ \t]*([^\r\n]*)$/gm,hc=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,ic=/^(?:GET|HEAD)$/,jc=/^\/\//,kc=/^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,lc={},mc={},nc="*/".concat("*"),oc=a.location.href,pc=kc.exec(oc.toLowerCase())||[];function qc(a){return function(b,c){"string"!=typeof b&&(c=b,b="*");var d,e=0,f=b.toLowerCase().match(E)||[];if(n.isFunction(c))while(d=f[e++])"+"===d[0]?(d=d.slice(1)||"*",(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function rc(a,b,c,d){var e={},f=a===mc;function g(h){var i;return e[h]=!0,n.each(a[h]||[],function(a,h){var j=h(b,c,d);return"string"!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e["*"]&&g("*")}function sc(a,b){var c,d,e=n.ajaxSettings.flatOptions||{};for(c in b)void 0!==b[c]&&((e[c]?a:d||(d={}))[c]=b[c]);return d&&n.extend(!0,a,d),a}function tc(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while("*"===i[0])i.shift(),void 0===d&&(d=a.mimeType||b.getResponseHeader("Content-Type"));if(d)for(e in h)if(h[e]&&h[e].test(d)){i.unshift(e);break}if(i[0]in c)f=i[0];else{for(e in c){if(!i[0]||a.converters[e+" "+i[0]]){f=e;break}g||(g=e)}f=f||g}return f?(f!==i[0]&&i.unshift(f),c[f]):void 0}function uc(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&&(c[a.responseFields[f]]=b),!i&&d&&a.dataFilter&&(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if("*"===f)f=i;else if("*"!==i&&i!==f){if(g=j[i+" "+f]||j["* "+f],!g)for(e in j)if(h=e.split(" "),h[1]===f&&(g=j[i+" "+h[0]]||j["* "+h[0]])){g===!0?g=j[e]:j[e]!==!0&&(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&&a["throws"])b=g(b);else try{b=g(b)}catch(l){return{state:"parsererror",error:g?l:"No conversion from "+i+" to "+f}}}return{state:"success",data:b}}n.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:oc,type:"GET",isLocal:hc.test(pc[1]),global:!0,processData:!0,async:!0,contentType:"application/x-www-form-urlencoded; charset=UTF-8",accepts:{"*":nc,text:"text/plain",html:"text/html",xml:"application/xml, text/xml",json:"application/json, text/javascript"},contents:{xml:/xml/,html:/html/,json:/json/},responseFields:{xml:"responseXML",text:"responseText",json:"responseJSON"},converters:{"* text":String,"text html":!0,"text json":n.parseJSON,"text xml":n.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?sc(sc(a,n.ajaxSettings),b):sc(n.ajaxSettings,a)},ajaxPrefilter:qc(lc),ajaxTransport:qc(mc),ajax:function(a,b){"object"==typeof a&&(b=a,a=void 0),b=b||{};var c,d,e,f,g,h,i,j,k=n.ajaxSetup({},b),l=k.context||k,m=k.context&&(l.nodeType||l.jquery)?n(l):n.event,o=n.Deferred(),p=n.Callbacks("once memory"),q=k.statusCode||{},r={},s={},t=0,u="canceled",v={readyState:0,getResponseHeader:function(a){var b;if(2===t){if(!f){f={};while(b=gc.exec(e))f[b[1].toLowerCase()]=b[2]}b=f[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return 2===t?e:null},setRequestHeader:function(a,b){var c=a.toLowerCase();return t||(a=s[c]=s[c]||a,r[a]=b),this},overrideMimeType:function(a){return t||(k.mimeType=a),this},statusCode:function(a){var b;if(a)if(2>t)for(b in a)q[b]=[q[b],a[b]];else v.always(a[v.status]);return this},abort:function(a){var b=a||u;return c&&c.abort(b),x(0,b),this}};if(o.promise(v).complete=p.add,v.success=v.done,v.error=v.fail,k.url=((a||k.url||oc)+"").replace(ec,"").replace(jc,pc[1]+"//"),k.type=b.method||b.type||k.method||k.type,k.dataTypes=n.trim(k.dataType||"*").toLowerCase().match(E)||[""],null==k.crossDomain&&(h=kc.exec(k.url.toLowerCase()),k.crossDomain=!(!h||h[1]===pc[1]&&h[2]===pc[2]&&(h[3]||("http:"===h[1]?"80":"443"))===(pc[3]||("http:"===pc[1]?"80":"443")))),k.data&&k.processData&&"string"!=typeof k.data&&(k.data=n.param(k.data,k.traditional)),rc(lc,k,b,v),2===t)return v;i=n.event&&k.global,i&&0===n.active++&&n.event.trigger("ajaxStart"),k.type=k.type.toUpperCase(),k.hasContent=!ic.test(k.type),d=k.url,k.hasContent||(k.data&&(d=k.url+=(dc.test(d)?"&":"?")+k.data,delete k.data),k.cache===!1&&(k.url=fc.test(d)?d.replace(fc,"$1_="+cc++):d+(dc.test(d)?"&":"?")+"_="+cc++)),k.ifModified&&(n.lastModified[d]&&v.setRequestHeader("If-Modified-Since",n.lastModified[d]),n.etag[d]&&v.setRequestHeader("If-None-Match",n.etag[d])),(k.data&&k.hasContent&&k.contentType!==!1||b.contentType)&&v.setRequestHeader("Content-Type",k.contentType),v.setRequestHeader("Accept",k.dataTypes[0]&&k.accepts[k.dataTypes[0]]?k.accepts[k.dataTypes[0]]+("*"!==k.dataTypes[0]?", "+nc+"; q=0.01":""):k.accepts["*"]);for(j in k.headers)v.setRequestHeader(j,k.headers[j]);if(k.beforeSend&&(k.beforeSend.call(l,v,k)===!1||2===t))return v.abort();u="abort";for(j in{success:1,error:1,complete:1})v[j](k[j]);if(c=rc(mc,k,b,v)){v.readyState=1,i&&m.trigger("ajaxSend",[v,k]),k.async&&k.timeout>0&&(g=setTimeout(function(){v.abort("timeout")},k.timeout));try{t=1,c.send(r,x)}catch(w){if(!(2>t))throw w;x(-1,w)}}else x(-1,"No Transport");function x(a,b,f,h){var j,r,s,u,w,x=b;2!==t&&(t=2,g&&clearTimeout(g),c=void 0,e=h||"",v.readyState=a>0?4:0,j=a>=200&&300>a||304===a,f&&(u=tc(k,v,f)),u=uc(k,u,v,j),j?(k.ifModified&&(w=v.getResponseHeader("Last-Modified"),w&&(n.lastModified[d]=w),w=v.getResponseHeader("etag"),w&&(n.etag[d]=w)),204===a||"HEAD"===k.type?x="nocontent":304===a?x="notmodified":(x=u.state,r=u.data,s=u.error,j=!s)):(s=x,(a||!x)&&(x="error",0>a&&(a=0))),v.status=a,v.statusText=(b||x)+"",j?o.resolveWith(l,[r,x,v]):o.rejectWith(l,[v,x,s]),v.statusCode(q),q=void 0,i&&m.trigger(j?"ajaxSuccess":"ajaxError",[v,k,j?r:s]),p.fireWith(l,[v,x]),i&&(m.trigger("ajaxComplete",[v,k]),--n.active||n.event.trigger("ajaxStop")))}return v},getJSON:function(a,b,c){return n.get(a,b,c,"json")},getScript:function(a,b){return n.get(a,void 0,b,"script")}}),n.each(["get","post"],function(a,b){n[b]=function(a,c,d,e){return n.isFunction(c)&&(e=e||d,d=c,c=void 0),n.ajax({url:a,type:b,dataType:e,data:c,success:d})}}),n._evalUrl=function(a){return n.ajax({url:a,type:"GET",dataType:"script",async:!1,global:!1,"throws":!0})},n.fn.extend({wrapAll:function(a){var b;return n.isFunction(a)?this.each(function(b){n(this).wrapAll(a.call(this,b))}):(this[0]&&(b=n(a,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&&b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstElementChild)a=a.firstElementChild;return a}).append(this)),this)},wrapInner:function(a){return this.each(n.isFunction(a)?function(b){n(this).wrapInner(a.call(this,b))}:function(){var b=n(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=n.isFunction(a);return this.each(function(c){n(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(){return this.parent().each(function(){n.nodeName(this,"body")||n(this).replaceWith(this.childNodes)}).end()}}),n.expr.filters.hidden=function(a){return a.offsetWidth<=0&&a.offsetHeight<=0},n.expr.filters.visible=function(a){return!n.expr.filters.hidden(a)};var vc=/%20/g,wc=/\[\]$/,xc=/\r?\n/g,yc=/^(?:submit|button|image|reset|file)$/i,zc=/^(?:input|select|textarea|keygen)/i;function Ac(a,b,c,d){var e;if(n.isArray(b))n.each(b,function(b,e){c||wc.test(a)?d(a,e):Ac(a+"["+("object"==typeof e?b:"")+"]",e,c,d)});else if(c||"object"!==n.type(b))d(a,b);else for(e in b)Ac(a+"["+e+"]",b[e],c,d)}n.param=function(a,b){var c,d=[],e=function(a,b){b=n.isFunction(b)?b():null==b?"":b,d[d.length]=encodeURIComponent(a)+"="+encodeURIComponent(b)};if(void 0===b&&(b=n.ajaxSettings&&n.ajaxSettings.traditional),n.isArray(a)||a.jquery&&!n.isPlainObject(a))n.each(a,function(){e(this.name,this.value)});else for(c in a)Ac(c,a[c],b,e);return d.join("&").replace(vc,"+")},n.fn.extend({serialize:function(){return n.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=n.prop(this,"elements");return a?n.makeArray(a):this}).filter(function(){var a=this.type;return this.name&&!n(this).is(":disabled")&&zc.test(this.nodeName)&&!yc.test(a)&&(this.checked||!T.test(a))}).map(function(a,b){var c=n(this).val();return null==c?null:n.isArray(c)?n.map(c,function(a){return{name:b.name,value:a.replace(xc,"\r\n")}}):{name:b.name,value:c.replace(xc,"\r\n")}}).get()}}),n.ajaxSettings.xhr=function(){try{return new XMLHttpRequest}catch(a){}};var Bc=0,Cc={},Dc={0:200,1223:204},Ec=n.ajaxSettings.xhr();a.attachEvent&&a.attachEvent("onunload",function(){for(var a in Cc)Cc[a]()}),k.cors=!!Ec&&"withCredentials"in Ec,k.ajax=Ec=!!Ec,n.ajaxTransport(function(a){var b;return k.cors||Ec&&!a.crossDomain?{send:function(c,d){var e,f=a.xhr(),g=++Bc;if(f.open(a.type,a.url,a.async,a.username,a.password),a.xhrFields)for(e in a.xhrFields)f[e]=a.xhrFields[e];a.mimeType&&f.overrideMimeType&&f.overrideMimeType(a.mimeType),a.crossDomain||c["X-Requested-With"]||(c["X-Requested-With"]="XMLHttpRequest");for(e in c)f.setRequestHeader(e,c[e]);b=function(a){return function(){b&&(delete Cc[g],b=f.onload=f.onerror=null,"abort"===a?f.abort():"error"===a?d(f.status,f.statusText):d(Dc[f.status]||f.status,f.statusText,"string"==typeof f.responseText?{text:f.responseText}:void 0,f.getAllResponseHeaders()))}},f.onload=b(),f.onerror=b("error"),b=Cc[g]=b("abort");try{f.send(a.hasContent&&a.data||null)}catch(h){if(b)throw h}},abort:function(){b&&b()}}:void 0}),n.ajaxSetup({accepts:{script:"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"},contents:{script:/(?:java|ecma)script/},converters:{"text script":function(a){return n.globalEval(a),a}}}),n.ajaxPrefilter("script",function(a){void 0===a.cache&&(a.cache=!1),a.crossDomain&&(a.type="GET")}),n.ajaxTransport("script",function(a){if(a.crossDomain){var b,c;return{send:function(d,e){b=n("<script>").prop({async:!0,charset:a.scriptCharset,src:a.url}).on("load error",c=function(a){b.remove(),c=null,a&&e("error"===a.type?404:200,a.type)}),l.head.appendChild(b[0])},abort:function(){c&&c()}}}});var Fc=[],Gc=/(=)\?(?=&|$)|\?\?/;n.ajaxSetup({jsonp:"callback",jsonpCallback:function(){var a=Fc.pop()||n.expando+"_"+cc++;return this[a]=!0,a}}),n.ajaxPrefilter("json jsonp",function(b,c,d){var e,f,g,h=b.jsonp!==!1&&(Gc.test(b.url)?"url":"string"==typeof b.data&&!(b.contentType||"").indexOf("application/x-www-form-urlencoded")&&Gc.test(b.data)&&"data");return h||"jsonp"===b.dataTypes[0]?(e=b.jsonpCallback=n.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(Gc,"$1"+e):b.jsonp!==!1&&(b.url+=(dc.test(b.url)?"&":"?")+b.jsonp+"="+e),b.converters["script json"]=function(){return g||n.error(e+" was not called"),g[0]},b.dataTypes[0]="json",f=a[e],a[e]=function(){g=arguments},d.always(function(){a[e]=f,b[e]&&(b.jsonpCallback=c.jsonpCallback,Fc.push(e)),g&&n.isFunction(f)&&f(g[0]),g=f=void 0}),"script"):void 0}),n.parseHTML=function(a,b,c){if(!a||"string"!=typeof a)return null;"boolean"==typeof b&&(c=b,b=!1),b=b||l;var d=v.exec(a),e=!c&&[];return d?[b.createElement(d[1])]:(d=n.buildFragment([a],b,e),e&&e.length&&n(e).remove(),n.merge([],d.childNodes))};var Hc=n.fn.load;n.fn.load=function(a,b,c){if("string"!=typeof a&&Hc)return Hc.apply(this,arguments);var d,e,f,g=this,h=a.indexOf(" ");return h>=0&&(d=n.trim(a.slice(h)),a=a.slice(0,h)),n.isFunction(b)?(c=b,b=void 0):b&&"object"==typeof b&&(e="POST"),g.length>0&&n.ajax({url:a,type:e,dataType:"html",data:b}).done(function(a){f=arguments,g.html(d?n("<div>").append(n.parseHTML(a)).find(d):a)}).complete(c&&function(a,b){g.each(c,f||[a.responseText,b,a])}),this},n.each(["ajaxStart","ajaxStop","ajaxComplete","ajaxError","ajaxSuccess","ajaxSend"],function(a,b){n.fn[b]=function(a){return this.on(b,a)}}),n.expr.filters.animated=function(a){return n.grep(n.timers,function(b){return a===b.elem}).length};var Ic=a.document.documentElement;function Jc(a){return n.isWindow(a)?a:9===a.nodeType&&a.defaultView}n.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=n.css(a,"position"),l=n(a),m={};"static"===k&&(a.style.position="relative"),h=l.offset(),f=n.css(a,"top"),i=n.css(a,"left"),j=("absolute"===k||"fixed"===k)&&(f+i).indexOf("auto")>-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),n.isFunction(b)&&(b=b.call(a,c,h)),null!=b.top&&(m.top=b.top-h.top+g),null!=b.left&&(m.left=b.left-h.left+e),"using"in b?b.using.call(a,m):l.css(m)}},n.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){n.offset.setOffset(this,a,b)});var b,c,d=this[0],e={top:0,left:0},f=d&&d.ownerDocument;if(f)return b=f.documentElement,n.contains(b,d)?(typeof d.getBoundingClientRect!==U&&(e=d.getBoundingClientRect()),c=Jc(f),{top:e.top+c.pageYOffset-b.clientTop,left:e.left+c.pageXOffset-b.clientLeft}):e},position:function(){if(this[0]){var a,b,c=this[0],d={top:0,left:0};return"fixed"===n.css(c,"position")?b=c.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),n.nodeName(a[0],"html")||(d=a.offset()),d.top+=n.css(a[0],"borderTopWidth",!0),d.left+=n.css(a[0],"borderLeftWidth",!0)),{top:b.top-d.top-n.css(c,"marginTop",!0),left:b.left-d.left-n.css(c,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent||Ic;while(a&&!n.nodeName(a,"html")&&"static"===n.css(a,"position"))a=a.offsetParent;return a||Ic})}}),n.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(b,c){var d="pageYOffset"===c;n.fn[b]=function(e){return J(this,function(b,e,f){var g=Jc(b);return void 0===f?g?g[c]:b[e]:void(g?g.scrollTo(d?a.pageXOffset:f,d?f:a.pageYOffset):b[e]=f)},b,e,arguments.length,null)}}),n.each(["top","left"],function(a,b){n.cssHooks[b]=yb(k.pixelPosition,function(a,c){return c?(c=xb(a,b),vb.test(c)?n(a).position()[b]+"px":c):void 0})}),n.each({Height:"height",Width:"width"},function(a,b){n.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){n.fn[d]=function(d,e){var f=arguments.length&&(c||"boolean"!=typeof d),g=c||(d===!0||e===!0?"margin":"border");return J(this,function(b,c,d){var e;return n.isWindow(b)?b.document.documentElement["client"+a]:9===b.nodeType?(e=b.documentElement,Math.max(b.body["scroll"+a],e["scroll"+a],b.body["offset"+a],e["offset"+a],e["client"+a])):void 0===d?n.css(b,c,g):n.style(b,c,d,g)},b,f?d:void 0,f,null)}})}),n.fn.size=function(){return this.length},n.fn.andSelf=n.fn.addBack,"function"==typeof define&&define.amd&&define("jquery",[],function(){return n});var Kc=a.jQuery,Lc=a.$;return n.noConflict=function(b){return a.$===n&&(a.$=Lc),b&&a.jQuery===n&&(a.jQuery=Kc),n},typeof b===U&&(a.jQuery=a.$=n),n});
+	</script>
+
+
+
+	<script type="text/javascript">
+	var docCookies={getItem:function(c){return !c||!this.hasItem(c)?null:unescape(document.cookie.replace(RegExp("(?:^|.*;\\s*)"+escape(c).replace(/[\-\.\+\*]/g,"\\$&")+"\\s*\\=\\s*((?:[^;](?!;))*[^;]?).*"),"$1"))},setItem:function(i,n,h,l,k,j){if(i&&!/^(?:expires|max\-age|path|domain|secure)$/i.test(i)){var m="";if(h){switch(h.constructor){case Number:m=Infinity===h?"; expires=Tue, 19 Jan 2038 03:14:07 GMT":"; max-age="+h;break;case String:m="; expires="+h;break;case Date:m="; expires="+h.toGMTString()}}document.cookie=escape(i)+"="+escape(n)+m+(k?"; domain="+k:"")+(l?"; path="+l:"")+(j?"; secure":"")}},removeItem:function(d,e){d&&this.hasItem(d)&&(document.cookie=escape(d)+"=; expires=Thu, 01 Jan 1970 00:00:00 GMT"+(e?"; path="+e:""))},hasItem:function(c){return RegExp("(?:^|;\\s*)"+escape(c).replace(/[\-\.\+\*]/g,"\\$&")+"\\s*\\=").test(document.cookie)}};var JQ=jQuery;window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(c){window.setTimeout(c,1000/60)}}();window.transitionEnd=function(f,h){var e=!1,g=document.createElement("div");JQ(["transition","WebkitTransition","MozTransition","msTransition"]).each(function(d,i){if(void 0!==g.style[i]){return e=!0,!1}});e?f.bind("webkitTransitionEnd oTransitionEnd MSTransitionEnd transitionend",function(a){f.unbind("webkitTransitionEnd oTransitionEnd MSTransitionEnd transitionend");h(a,f)}):setTimeout(function(){h(null,f)},0);return f};var Royal_Preloader={_overlay:null,_loader:null,_name:null,_percentage:null,_on_complete:null,_text_loader:null,_text_loader_overlay:null,_logo_loader:null,_logo_loader_meter:null,_total:0,_loaded:0,_image_queue:[],_percentage_loaded:0,_mode:"number",_text:"loading",_text_colour:"#FFFFFF",_images:[],_show_progress:!0,_show_percentage:!0,_background:"#000000",_logo:"",_logo_size:[80,80],_cookie:!1,_timeout:10,_init:function(){JQ("img").each(function(c){JQ(this).attr("src")&&Royal_Preloader._images.push(JQ(this).attr("src"))});if(Royal_Preloader._cookie){if(docCookies.getItem("melonhtml5_royal_preloader_"+Royal_Preloader._cookie)){JQ("#royal_preloader").remove();JQ(document.body).removeClass("royal_preloader");return}docCookies.setItem("melonhtml5_royal_preloader_"+Royal_Preloader._cookie,(new Date).getTime(),Infinity)}Royal_Preloader._total=Royal_Preloader._images.length;Royal_Preloader._build();Royal_Preloader._load()},_build:function(){this._overlay=JQ("#royal_preloader");this._overlay.length||(this._overlay=JQ("<div>").attr("id","royal_preloader").prependTo(JQ(document.body)));this._overlay.addClass("royal_preloader_"+this._mode);"line"!==this._mode&&this._overlay.css("background-color",this._background);switch(this._mode){case"progress":this._text_loader_overlay=JQ("<div>").css("background-color",this._background).appendTo(this._text_loader);this._progress_loader=JQ("<div>").addClass("royal_preloader_loader").appendTo(this._overlay),this._progress_loader_meter=JQ("<div>").addClass("royal_preloader_meter").appendTo(this._progress_loader),this._show_progress&&(this._percentage=JQ("<div>").addClass("royal_preloader_percentage").text(0).appendTo(this._overlay))}this._overlay.appendTo(JQ(document.body));"text"===this._mode&&this._text_loader.css("margin-left",this._text_loader.width()/2*-1)},_load:function(){"number"!==this._mode&&"logo"!==this._mode&&"progress"!==this._mode||!this._show_progress||(this._percentage.data("num",0),this._percentage.text("0"+(Royal_Preloader._show_percentage?"%":"")));JQ.each(this._images,function(f,h){var e=function(){Royal_Preloader._imageOnLoad(h)},g=new Image;g.src=h;g.complete?e():(g.onload=e,g.onerror=e)});setTimeout(function(){Royal_Preloader._overlay&&Royal_Preloader._animatePercentage(Royal_Preloader._percentage_loaded,100)},this._images.length?1000*this._timeout:0)},_animatePercentage:function(d,e){Royal_Preloader._percentage_loaded=d;d<e&&(d++,setTimeout(function(){switch(Royal_Preloader._mode){case"progress":Royal_Preloader._show_progress&&(b=d+(Royal_Preloader._show_percentage?"%":""),Royal_Preloader._percentage.text(b)),Royal_Preloader._progress_loader_meter.width(d+"%")}Royal_Preloader._animatePercentage(d,e)},5),100===d&&Royal_Preloader._loadFinish())},_imageOnLoad:function(c){this._image_queue.push(c);this._image_queue.length&&this._image_queue[0]===c&&this._processQueue()},_reQueue:function(){Royal_Preloader._image_queue.splice(0,1);Royal_Preloader._processQueue()},_processQueue:function(){0!==this._image_queue.length&&(this._loaded++,Royal_Preloader._animatePercentage(Royal_Preloader._percentage_loaded,parseInt(this._loaded/this._total*100,10)),this._reQueue())},_loadFinish:function(){transitionEnd(this._overlay,function(d,e){Royal_Preloader._overlay&&(Royal_Preloader._overlay.remove(),Royal_Preloader._overlay=null)});this._overlay.addClass("complete");JQ(document.body).removeClass("royal_preloader");this._on_complete&&this._on_complete()},config:function(c){"undefined"!==typeof c.mode&&(this._mode=c.mode);"undefined"!==typeof c.text&&(this._text=c.text);"undefined"!==typeof c.text_colour&&(this._text_colour=c.text_colour);"undefined"!==typeof c.timeout&&(this._timeout=parseInt(c.timeout,10));"undefined"!==typeof c.showProgress&&(this._show_progress=c.showProgress?!0:!1);"undefined"!==typeof c.showPercentage&&(this._show_percentage=c.showPercentage?!0:!1);"undefined"!==typeof c.background&&(this._background=c.background);"undefined"!==typeof c.logo&&(this._logo=c.logo);"undefined"!==typeof c.logo_size&&(this._logo_size=c.logo_size);"undefined"!==typeof c.onComplete&&(this._on_complete=c.onComplete);"undefined"!==typeof c.images&&(this._images=c.images);"undefined"!==typeof c.cookie&&(this._cookie=c.cookie)}};setTimeout(function(){JQ(document).ready(Royal_Preloader._init)});
+	Royal_Preloader.config({
+			mode:           'progress',
+			showProgress:   false,
+			background:     '#141823'
+	});
+</script>
+
+
+	<script>
+	  var dataLayer = [];
+	</script>
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TZ3XXRN');</script>
+	<!-- End Google Tag Manager -->
+
+
+	<script type="text/javascript">
+
+	//navbar trans
+	$(window).scroll(function() {
+	  if ($(document).scrollTop() > 50) {
+	    $('nav').addClass('addcolor');
+			// $('.navbar-default .navbar-nav > li > a').css('color','black');//.addClass('addcolor');
+	  } else {
+	    $('nav').removeClass('addcolor');
+			$('.navbar-default .navbar-nav > li > a').css('color','white');//.addClass('addcolor');
+	  }
+	});
+
+		$(window).load( function(){
+		  function preload(imageArray, index) {
+		          index = index || 0;
+		          if (imageArray && imageArray.length > index) {
+		              img = images[index];
+		              img.onload = function() {
+		                  preload(imageArray, index + 1);
+		              }
+		              img.src = images[index]["url"];
+		            };
+		  };
+
+			function preload_course() {
+					var a = document.getElementById("course1");
+					a.style.backgroundImage = "url(images/course1.jpg)";
+					var b = document.getElementById("course2");
+					b.style.backgroundImage = "url(images/course2.jpg)";
+					// a = document.getElementById("course3");
+					// a.style.backgroundImage = "url(images/course3.jpg)";
+
+					// a = document.getElementById("tag-main-course");
+					// var elem = document.createElement("img");
+					// elem.src =  "images/pricing_tag_red-01.png";
+					// a.appendChild(elem);
+          //
+					// a = document.getElementById("tag-real-course");
+					// var elem1 = document.createElement("img");
+					// elem1.src =  "images/pricing_tag_blue.png";
+					// a.appendChild(elem1);
+
+			};
+
+			function preload_slider() {
+	        var re = document.getElementById("ourcount");
+					re.style.background = "url(https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png)";
+	    };
+
+			function preload_bg(){
+				// var creams = document.getElementById("about");
+				// creams.style.background = "url(images/cream_pixels.png)";
+				var fs = document.querySelectorAll( ".background2" );
+				for (var i = 0; i < fs.length; i++) {
+					fs[i].style.backgroundImage = "url(images/FS.png)";
+					fs[i].style.backgroundRepeat = "no-repeat";
+					fs[i].style.backgroundPosition = "right";
+				}
+
+				var photographys = document.querySelectorAll( ".background-photography" );
+				for (var i = 0; i < photographys.length; i++) {
+					photographys[i].style.background = "url(images/photography.png)";
+				}
+			}
+
+			function preload_reviews() {
+				for (i = 0; i < 6; i++){
+					 var name = "review"+(i);
+					 var img = document.getElementById(name);
+					 if (img){
+						 img["url"] = "images/"+ name +".png";
+						 images.push(img);
+					 }
+				 }
+	    };
+
+			function preload_news() {
+				for (i = 0; i < 9; i++){
+					var name = "news"+(i);
+					var img = document.getElementById(name);
+					if (img){
+						 img["url"] = "images/"+ name +".jpg";
+						 images.push(img);
+					 }
+				}
+	    };
+
+
+			function preload_classroom() {
+				for (i = 0; i < 2; i++){
+					var name = "classroom"+(i);
+		 			 var img = document.getElementById(name);
+		 			 if (img){
+		 					img["url"] = "images/"+ name +".jpg";
+		 					images.push(img);
+		 				}
+				}
+	    };
+
+			function preload_charts() {
+				for (i = 0; i < 3; i++){
+					var name = "chart"+(i);
+					 var img = document.getElementById(name);
+					 if (img){
+							img["url"] = "images/"+ name +".jpg";
+							images.push(img);
+						}
+				}
+			};
+
+			function preload_icons() {
+				for (i = 0; i < 8; i++){
+					var name = "icon"+(i);
+					 var img = document.getElementById(name);
+					 if (img){
+							img["url"] = "images/"+ name +".png";
+							images.push(img);
+						}
+				}
+			};
+
+			function preload_teacher() {
+				for (i = 0; i < 2; i++){
+					var name = "teacher"+(i);
+					 var img = document.getElementById(name);
+					 if (img){
+							img["url"] = "images/"+ name +".jpg";
+							images.push(img);
+						}
+				}
+			};
+
+			images = new Array();
+		 	preload_charts();
+			preload_bg();
+			preload_course();
+			preload_reviews();
+      preload_slider();
+			preload_icons();
+			preload_teacher();
+			preload_classroom();
+			preload_news();
+		  preload(images);
+		});
+
+
+		document.addEventListener("DOMContentLoaded", function(event) {
+		var acc = document.getElementsByClassName("accordion");
+		var panel = document.getElementsByClassName('panel');
+		for (var i = 0; i < acc.length; i++) {
+		 acc[i].onclick = function() {
+		 var setClasses = !this.classList.contains('active');
+		 setClass(acc, 'active', 'remove');
+		 setClass(panel, 'show', 'remove');
+		 if (setClasses) {
+		 this.classList.toggle("active");
+		 this.nextElementSibling.classList.toggle("show");
+		 }
+		 }
+		}
+		function setClass(els, className, fnName) {
+		 for (var i = 0; i < els.length; i++) {
+		 els[i].classList[fnName](className);
+		 }
+		}
+		});
+	</script>
+	</script>
+	<!-- <script type="text/javascript">
+	    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+	      heap.load("3000827255");
+	</script> -->
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<script type="text/javascript">
+	    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+	    heap.load("3000827255");
+	</script>
+
+</head>
+<body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZ3XXRN"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<div id="royal_preloader"></div>
+
+<!--
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.9&appId=128256714390437";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script> -->
+
+
+
+
+	<div hidden>
+
+
+		<svg version="1.1" id="fireplace" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+		<polygon style="fill:#E7ECED;" points="29,1.682 6,23.039 6,27.682 6,57.682 52,57.682 52,27.682 52,23.039 "/>
+		<path style="fill:#556080;" d="M36,57.682H22v-17c0-3.866,3.134-7,7-7h0c3.866,0,7,3.134,7,7V57.682z"/>
+		<polyline style="fill:none;stroke:#DD352E;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;" points="1,27.682 29,1.682
+			57,27.682 "/>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		<g>
+		</g>
+		</svg>
+
+
+
+		<svg display="none" xmlns="http://www.w3.org/2000/svg">
+	 <symbol id="paper-printer" viewBox="0 0 512 512" id=".2618091310557866" xmlns="http://www.w3.org/2000/svg">
+	 <image width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAA CXBIWXMAAA3XAAAN1wFCKJt4AABAbklEQVR42u3d93cbV6In+Lq3qpABIhAEQVKiKJHKEpVzcGy7 u9+cnX2zP+wP+2fMzL+z58zOOTv73ky33e2cZFmWbVk5ByozgGBCjlV17/4Aie2WFViFUCje76fP 6efnJlC3gEJ9b91IFlJzEgAAtEjx//m/o7/8aHcpVkSxuwAAAKsKq9d5qWR3KVaE2l0AAACwBwIA AEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQCAAAAEEhAAAABIUA AAAQFAIAAEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQCAAAAEEh AAAABIUAAAAQFAIAAEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQ CAAAAEEhAAAABIUAAAAQFAIAAEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQCAAAAEEhAAAABIUAAAAQ FAIAAEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQCAAAAEEhAAAABIUAAAAQFAIAAEBQit0FAABYVYgi S4pqdykauESIxJf/gUuEPPsHSZI4JwupObuLCAAANkATEACAoBAAAACCQgAAAAgKAQAAICgEAACA oBAAAACCQgAAAAgKAQAAICgEAACAoBAAAACCQgAAAAgKAQAAICgEAACAoBAAAACCQgAAAAgKAQAA ICgEAACAoBAAAACCQgAAAAgKAQAAICgEAACAoBAAAACCQgAAAAgKAQAAICgEAACAoBAAAACCQgAA AAgKAQAAICgEAACAoBAAAACCQgAAAAgKAQAAICgEAACAoBAAAACCQgAAAAgKAQAAICgEAACAoBAA AACCQgAAAAgKAQAAICgEAACAoBAAAACCQgAAAAgKAQAAICgEAACAoBAAAACCQgAAAAgKAQAAICgE AACAoBAAAACCQgAAAAgKAQAAICgEAACAoBAAAACCQgAAAAhKsbsAXYRSSmWZEkIo5ZxLnDPGDMPg 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"/>
+	 </symbol>
+	</svg>
+
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol id="technology" viewBox="0 0 512.001 512.001"><title>technology</title><rect y="24.45" style="fill:#FF6F52;" width="145.925" height="463.102"/><rect x="183.032" y="252.535" style="fill:#4EBFED;" width="145.925" height="235.004"/><rect x="366.076" y="174.995" style="fill:#FCD577;" width="145.925" height="312.556"/></symbol><symbol id="fader" viewBox="0 0 512.004 512.004"><title>fader</title><circle style="fill:#BAC6CC;" cx="256.001" cy="303.534" r="160.94"/><circle style="fill:#CFDCE5;" cx="256.001" cy="303.535" r="121.706"/><rect x="246.817" y="47.529" style="fill:#314A5F;" width="18.368" height="53.539"/><rect x="182.453" y="82.555" transform="matrix(-0.2588 -0.9659 0.9659 -0.2588 162.2063 307.9435)" style="fill:#415E72;" width="33.596" height="18.367"/><rect x="114.618" y="95.829" transform="matrix(-0.5 -0.866 0.866 -0.5 121.1397 279.9639)" style="fill:#314A5F;" width="53.538" height="18.368"/><rect x="89.976" y="141.715" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 69.7617 330.6933)" style="fill:#415E72;" width="26.786" height="18.368"/><g> <rect x="427.744" y="408.957" transform="matrix(-0.866 -0.5 0.5 -0.866 639.0536 1007.5198)" style="fill:#314A5F;" width="53.537" height="18.368"/> <rect x="30.712" y="179.729" transform="matrix(-0.866 -0.5 0.5 -0.866 12.8003 381.2561)" style="fill:#314A5F;" width="53.537" height="18.368"/> </g><g> <rect x="450.98" y="351.108" transform="matrix(-0.9659 -0.2588 0.2588 -0.9659 826.6572 829.4106)" style="fill:#415E72;" width="33.885" height="18.367"/> <rect x="27.544" y="237.61" transform="matrix(-0.9659 -0.2588 0.2588 -0.9659 23.1761 496.6394)" style="fill:#415E72;" width="33.469" height="18.367"/> </g><g> <rect x="458.465" y="294.351" style="fill:#314A5F;" width="53.539" height="18.368"/> <rect y="294.351" style="fill:#314A5F;" width="53.538" height="18.368"/> </g><g> <rect x="458.826" y="229.645" transform="matrix(-0.2588 -0.9659 0.9659 -0.2588 350.8478 762.6018)" style="fill:#415E72;" width="18.367" height="34.094"/> <rect x="37.6" y="345.43" transform="matrix(-0.2588 -0.9659 0.9659 -0.2588 -288.424 497.8155)" style="fill:#415E72;" width="18.367" height="28.274"/> </g><g> <rect x="445.342" y="162.14" transform="matrix(-0.5 -0.866 0.866 -0.5 518.1948 676.9928)" style="fill:#314A5F;" width="18.368" height="53.537"/> <rect x="48.305" y="391.383" transform="matrix(-0.5 -0.866 0.866 -0.5 -275.8923 677.0179)" style="fill:#314A5F;" width="18.368" height="53.537"/> </g><rect x="400.213" y="135.621" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 592.7351 545.7548)" style="fill:#415E72;" width="18.368" height="28.993"/><rect x="361.427" y="78.24" transform="matrix(-0.866 -0.5 0.5 -0.866 639.0607 381.2572)" style="fill:#314A5F;" width="18.368" height="53.537"/><g> <rect x="303.368" y="76.329" transform="matrix(-0.9659 -0.2588 0.2588 -0.9659 590.5344 262.5793)" style="fill:#415E72;" width="18.366" height="32.18"/> <circle style="fill:#415E72;" cx="329.779" cy="249.9" r="15.001"/> </g></symbol><symbol id="cube" viewBox="0 0 58 58"><title>cube</title><polygon style="fill:#26B99A;" points="29,58 3,45 3,13 29,26 "/><polygon style="fill:#556080;" points="29,58 55,45 55,13 29,26 "/><polygon style="fill:#434C6D;" points="3,13 28,0 55,13 29,26 "/></symbol><symbol id="question" viewBox="0 0 512 512"><title>question</title><circle style="fill:#FF5050;" cx="211.862" cy="158.897" r="158.897"/><path style="fill:#C84146;" d="M308.586,176.754c-1.358-0.136-2.705-0.202-4.034-0.202l0,0c-12.318-0.001-23.78,5.568-31.511,15.516 c-5.664,7.287-8.213,16.538-8.213,25.768v64.341c0,4.578-3.488,8.511-8.057,8.811c-3.172,0.207-6.371,0.323-9.598,0.323 c-87.756,0-158.897-71.14-158.897-158.897c0-44.015,17.908-83.838,46.822-112.612c-53.251,29.453-87.836,88.536-81.353,155.041 c6.41,65.75,54.46,121.274,118.413,137.831c33.13,8.577,64.599,5.824,92.67-4.121v0.007c32.727-11.587,60.562-33.459,79.448-61.897 v-29.128C344.276,196.669,328.599,178.756,308.586,176.754z"/><g> <path style="fill:#FFFFFF;" d="M211.862,218.483c-6.094,0-11.034-4.94-11.034-11.034v-5.017c0-9.987,7.423-18.431,17.267-19.638 c25.75-3.147,44.879-25.117,44.518-51.104c-0.371-26.75-23.276-49.66-50.026-50.03c-13.673-0.138-26.612,5-36.362,14.612 c-9.75,9.618-15.121,22.454-15.121,36.143c0,6.094-4.94,11.034-11.034,11.034c-6.094,0-11.034-4.94-11.034-11.034 c0-19.642,7.706-38.056,21.689-51.853c13.741-13.551,31.862-20.974,51.129-20.974c0.345,0,0.69,0,1.043,0.004 c39.034,0.543,71.241,32.75,71.785,71.789c0.509,36.565-25.906,67.591-61.784,73.031v3.038 C222.897,213.543,217.956,218.483,211.862,218.483z"/> <path style="fill:#FFFFFF;" d="M211.862,260.414c-7.3,0-13.241-5.941-13.241-13.241c0-7.3,5.941-13.241,13.241-13.241 c7.3,0,13.241,5.941,13.241,13.241C225.103,254.473,219.162,260.414,211.862,260.414z"/> </g><path style="fill:#F0C087;" d="M459.034,423.724v-64.949c0-11.544-8.307-22.063-19.794-23.213 c-13.209-1.322-24.344,9.016-24.344,21.955v-7.57c0-11.544-8.307-22.063-19.794-23.213c-13.209-1.322-24.344,9.016-24.344,21.955 v-7.57c0-11.544-8.307-22.063-19.794-23.213c-13.209-1.322-24.344,9.016-24.344,21.955V217.534c0-11.544-8.307-22.063-19.794-23.213 c-13.209-1.322-24.344,9.016-24.344,21.955v207.448c0,48.754,39.522,88.276,88.276,88.276l0,0 C419.512,512,459.034,472.478,459.034,423.724z"/><g> <path style="fill:#E6AF78;" d="M300.138,423.724V216.276c0-9.01,5.454-16.657,13.193-20.085c-2.024-0.934-4.175-1.636-6.504-1.869 c-13.209-1.323-24.344,9.015-24.344,21.954v207.448c0,48.754,39.522,88.276,88.276,88.276c2.98,0,5.923-0.158,8.828-0.446 C334.978,507.124,300.138,469.497,300.138,423.724z"/> <path style="fill:#E6AF78;" d="M335.448,353.103c4.875,0,8.828-3.953,8.828-8.828v-4.414c0-9.01,5.454-16.657,13.193-20.085 c-2.024-0.934-4.175-1.636-6.504-1.869c-13.209-1.323-24.344,9.015-24.344,21.954v4.414 C326.621,349.151,330.573,353.103,335.448,353.103L335.448,353.103z"/> <path style="fill:#E6AF78;" d="M379.586,361.931c4.875,0,8.828-3.953,8.828-8.828v-4.414c0-9.01,5.454-16.657,13.193-20.085 c-2.024-0.934-4.175-1.636-6.504-1.869c-13.209-1.323-24.344,9.015-24.344,21.954v4.414 C370.759,357.978,374.711,361.931,379.586,361.931L379.586,361.931z"/> <path style="fill:#E6AF78;" d="M423.724,370.759c4.875,0,8.828-3.953,8.828-8.828v-4.414c0-9.01,5.454-16.657,13.193-20.085 c-2.024-0.934-4.175-1.636-6.504-1.869c-13.209-1.323-24.344,9.015-24.344,21.954v4.414 C414.897,366.806,418.849,370.759,423.724,370.759L423.724,370.759z"/> </g></symbol><symbol id="line-graphic" viewBox="0 0 512 512"><title>line-graphic</title><g> <path style="fill:#4C5870;" d="M356.023,326.658c-1.68,0-3.387-0.367-5.002-1.142c-5.768-2.767-8.201-9.686-5.434-15.454 l117.63-245.211c2.767-5.768,9.687-8.201,15.455-5.434c5.768,2.767,8.201,9.686,5.434,15.454l-117.631,245.21 C364.483,324.234,360.339,326.658,356.023,326.658z"/> <path style="fill:#4C5870;" d="M358.032,322.465c-2.054,0-4.134-0.547-6.018-1.695l-114.133-69.576 c-5.463-3.33-7.191-10.458-3.861-15.921c3.33-5.462,10.453-7.191,15.919-3.861l114.133,69.576 c5.463,3.33,7.191,10.458,3.861,15.921C365.751,320.489,361.938,322.465,358.032,322.465z"/> <path style="fill:#4C5870;" d="M128.537,392.851c-2.594,0-5.202-0.868-7.36-2.646c-4.937-4.069-5.64-11.369-1.571-16.306 l115.366-139.964c4.07-4.937,11.368-5.64,16.306-1.571c4.937,4.069,5.64,11.369,1.571,16.306L137.484,388.634 C135.192,391.412,131.878,392.851,128.537,392.851z"/> </g><g> <path style="fill:#E6E2E0;" d="M55.612,512c-6.397,0-11.584-5.186-11.584-11.584V11.584C44.029,5.186,49.216,0,55.612,0 s11.584,5.186,11.584,11.584v488.833C67.196,506.814,62.009,512,55.612,512z"/> <path style="fill:#E6E2E0;" d="M500.416,467.971H11.584C5.187,467.971,0,462.785,0,456.388s5.187-11.584,11.584-11.584h488.833 c6.397,0,11.584,5.186,11.584,11.584S506.813,467.971,500.416,467.971z"/> </g><g> <circle style="fill:#269AF2;" cx="243.907" cy="241.3" r="28.959"/> <circle style="fill:#269AF2;" cx="129.772" cy="382.228" r="28.959"/> <circle style="fill:#269AF2;" cx="358.041" cy="310.884" r="28.959"/> <circle style="fill:#269AF2;" cx="472.175" cy="74.321" r="28.959"/> </g></symbol><symbol id="man" viewBox="0 0 512.001 512.001"><title>man</title><polygon style="fill:#EF4C35;" points="278.665,418.858 289.429,390.192 256.407,365.893 223.276,390.276 235.25,418.858 "/><polygon style="fill:#DD3E2B;" points="235.25,418.858 235.881,420.366 221.1,512 292.932,512 278.134,420.278 278.665,418.858 "/><polygon style="fill:#D2D2D7;" points="230.312,512 245.273,419.253 230.816,384.73 184.43,340.627 193.511,406.757 222.988,512 "/><polygon style="fill:#E4E4EA;" points="291.181,512 320.998,405.542 330.084,339.397 281.819,384.598 268.774,419.342 283.721,512 "/><path style="fill:#F5F5F7;" d="M291.867,403.172c9.546,7.025,15.319,0.771,17.475-2.483l30.413-62.511l-39.251-25.908l-9.265,16.683 l-34.522,35.836l-33.594-32.724l-6.511-22.629l-43.549,28.74l29.696,61.038c0.821,1.624,6.844,12.407,18.329,3.966l35.319-25.993 l33.662,24.771C290.603,402.283,291.193,402.675,291.867,403.172z"/><path style="fill:#694B4B;" d="M261.415,0h-9.211c-62.925,0-114.114,51.196-114.114,114.118v15.22v14.245v24.068 c0,0,25.98-2.577,29.176-15.176l-0.017-0.013c1.097-1.193,2.014-2.552,2.661-4.072c14.737-0.444,83.578-0.98,122.89-48.459 c4.692,13.725,20.562,39.713,51.1,47.897c0.63,1.656,1.565,3.15,2.709,4.444l-0.253,0.204c3.194,12.599,29.176,15.176,29.176,15.176 v-24.167v-14.147v-15.22C375.532,51.196,324.338,0,261.415,0z M347.452,144.28l1.099-0.796h0.156l-1.79,1.326L347.452,144.28z M346.893,144.623l0.123-0.388l0.381-0.751h0.155l-0.453,0.943L346.893,144.623z M343.866,146.963l-0.042-0.06l2.814-2.036 l-0.664,0.642l-2.057,1.521L343.866,146.963z M346.189,146.302l-0.881,1.823c-0.007-0.002-0.009-0.002-0.016-0.006l-0.123-0.056 c-0.02-0.009-0.043-0.023-0.06-0.032l1.436-2.855l0.038-0.036L346.189,146.302z"/><path style="fill:#563B3B;" d="M158.204,143.582v-14.245v-15.22c0-61.097,48.263-111.122,108.663-113.978 c-1.81-0.087-3.626-0.14-5.452-0.14h-9.211c-62.925,0-114.114,51.196-114.114,114.118v15.22v14.245v24.068 c0,0,11.48-1.145,20.115-5.607V143.582z"/><path style="fill:#FBCB99;" d="M361.826,151.107c-4.367-1.361-9.111-0.566-12.793,2.14c-3.679,2.708-5.852,7.008-5.852,11.577 v40.943c0,4.567,2.172,8.864,5.852,11.568c2.5,1.841,5.489,2.798,8.517,2.798c1.427,0,2.874-0.211,4.272-0.652 c2.755-0.856,5.459-2.095,8.041-3.679c1.518-0.93,2.851-2.141,3.93-3.556c1.584-0.818,3.003-1.922,4.186-3.257 c5.805-6.565,9.003-14.979,9.003-23.699C386.982,169.534,376.874,155.796,361.826,151.107z"/><path style="fill:#EDBA89;" d="M165.003,153.245c-3.681-2.706-8.429-3.5-12.791-2.143c-15.046,4.694-25.161,18.432-25.161,34.187 c0,15.762,10.114,29.499,25.161,34.191c1.399,0.44,2.842,0.652,4.277,0.652c3.024,0,6.013-0.957,8.514-2.796 c3.684-2.706,5.855-7.003,5.855-11.571v-40.948C170.858,160.253,168.687,155.953,165.003,153.245z"/><path style="fill:#FBCB99;" d="M296.246,277.139c-2.825-2.703-6.615-4.121-10.55-3.976l-0.488,0.023 c-0.877,0.03-1.751,0.144-2.61,0.331c-5.549,1.235-11.204,1.862-16.795,1.862h-17.566c-5.761,0-11.578-0.663-17.297-1.973 c-4.268-0.983-8.742,0.037-12.162,2.764c-3.423,2.726-5.417,6.867-5.417,11.238v41.794l-0.008,0.141 c-0.227,4.146,1.346,8.188,4.319,11.088l28.869,28.12c2.684,2.614,6.283,4.071,10.022,4.071c0.078,0,0.158,0,0.233,0 c3.824-0.063,7.468-1.645,10.118-4.402l29.742-30.872c2.581-2.677,4.021-6.25,4.021-9.965v-39.864 C300.676,283.599,299.077,279.85,296.246,277.139z"/><path style="fill:#EDBA89;" d="M259.476,364.235l-28.872-28.117c-2.973-2.898-4.548-6.938-4.321-11.087l0.013-0.142v-41.794 c0-3.676,1.423-7.176,3.906-9.818c-4.041-0.706-8.2,0.327-11.422,2.892c-3.423,2.726-5.417,6.867-5.417,11.238v41.794l-0.008,0.141 c-0.227,4.146,1.346,8.188,4.319,11.088l28.869,28.12c2.684,2.614,6.283,4.071,10.022,4.071c0.078,0,0.158,0,0.233,0 c3.824-0.063,7.468-1.645,10.117-4.402l0.128-0.134C264.208,367.596,261.562,366.271,259.476,364.235z"/><path style="fill:#FBCB99;" d="M341.015,139.38c-1.738-0.648-3.378-1.402-4.979-2.205c-24.143-11.265-34.164-25.917-38.198-34.658 c-0.239-0.33-0.48-0.694-0.725-1.151c-2.885-5.305-7.382-1.947-7.382-1.947l-0.02-0.011c-22.546,17.293-47.173,27.406-67.647,33.29 c-7.97,2.355-15.605,4.058-22.51,5.296c-13.723,2.52-22.546,2.85-22.546,2.85c-7.517,0.541-13.339,6.799-13.339,14.334v58.625 c0,46.631,37.94,84.566,84.567,84.566h17.566c46.626,0,84.563-37.934,84.563-84.566v-60.961 C350.366,146.84,346.634,141.476,341.015,139.38z"/><path style="fill:#EDBA89;" d="M180.912,213.803v-58.625c0-7.535,5.82-13.792,13.336-14.334c0,0,8.82-0.33,22.546-2.85 c6.908-1.238,14.543-2.941,22.515-5.296c18.116-5.211,39.491-13.741,59.802-27.62c-0.478-0.898-0.903-1.754-1.274-2.562 c-0.239-0.33-0.48-0.694-0.725-1.151c-2.885-5.305-7.382-1.947-7.382-1.947l-0.02-0.011c-22.546,17.293-47.173,27.406-67.647,33.29 c-7.97,2.355-15.605,4.058-22.51,5.296c-13.723,2.52-22.546,2.85-22.546,2.85c-7.517,0.541-13.339,6.799-13.339,14.334v58.625 c0,46.631,37.94,84.566,84.567,84.566h17.236C218.848,298.369,180.912,260.434,180.912,213.803z"/><g> <path style="fill:#324A5E;" d="M92.384,512h140.049l-50.186-179.167l-51.759,21.569l-0.07,0.026 c-21.022,7.379-56.597,34.147-56.597,87.653v51.377C74.099,499,76.444,512,92.384,512z"/> <path style="fill:#324A5E;" d="M438.18,494.081v-51.997c0-54.164-37-81.002-56.674-87.683l-49.812-20.756l-49.961,178.356h137.922 C435.026,512,437.756,499.909,438.18,494.081z"/> </g><g> <path style="fill:#283D4C;" d="M182.247,332.834l-51.759,21.569l-0.07,0.026c-21.022,7.379-56.597,34.147-56.597,87.653v51.377 c0.278,5.54,2.624,18.54,18.563,18.54h2.323v-69.917c0-53.507,35.574-80.275,56.597-87.653l0.069-0.026l33.057-13.776 L182.247,332.834z"/> <path style="fill:#283D4C;" d="M379.854,512v-71.43c0-4.486-3.636-8.121-8.121-8.121c-4.486,0-8.121,3.635-8.121,8.121V512H379.854 z"/> <path style="fill:#283D4C;" d="M150.423,512v-71.43c0-4.486-3.635-8.121-8.121-8.121c-4.486,0-8.121,3.635-8.121,8.121V512H150.423 z"/> </g><path style="fill:#EDBA89;" d="M265.261,220.686c2.985,0,5.414,2.429,5.414,5.414s-2.429,5.414-5.414,5.414h-13.834 c-2.985,0-5.414-2.429-5.414-5.414v-26.39c0-2.985,2.429-5.414,5.414-5.414c2.985,0,5.414,2.429,5.414,5.414v20.976H265.261z"/></symbol>
+
+			<symbol id="checked" viewBox="0 0 426.67 426.67"><title>checked</title><path style="fill:#F05228;" d="M153.504,366.839c-8.657,0-17.323-3.302-23.927-9.911L9.914,237.265 c-13.218-13.218-13.218-34.645,0-47.863c13.218-13.218,34.645-13.218,47.863,0l95.727,95.727l215.39-215.386 c13.218-13.214,34.65-13.218,47.859,0c13.222,13.218,13.222,34.65,0,47.863L177.436,356.928 C170.827,363.533,162.165,366.839,153.504,366.839z"/></symbol>
+		</svg>
+</div>
+
+	<!-- Begin Header -->
+	<header>
+		<!-- Begin Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- <a class="navbar-brand scroll-link" href="#home" data-id="home"><span class="icon-handle-streamline-vector logo"></span></a> -->
+						<!-- <a class="navbar-brand scroll-link" href="#home" data-id="home"><div class="logo"><img src="images/logo_text.png" class="logo-img" alt="..."></div></a> -->
+						<a class="navbar-brand scroll-link" href="#home" data-id="home">
+
+							<img class="icon logo-icon" src="images/home_icon.png">
+							<!-- <svg class="icon logo-icon">
+							<use xlink:href="#cube" />
+							</svg> -->
+
+						</a>
+
+
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home" data-id="home" class="scroll-link">
+								<div class="avatar-container">
+									<div class="avatar-img-border">
+										<svg class="icon avatar-img">
+											<use xlink:href="#fireplace"></use>
+										</svg>
+									</div>
+								</div>
+								首頁
+							</a></li>
+							<li><a href="#services" data-id="services" class="scroll-link">
+								<div class="avatar-container">
+									<div class="avatar-img-border">
+										<svg class="icon avatar-img">
+											<use xlink:href="#fader"></use>
+										</svg>
+									</div>
+								</div>
+								<!-- <img class="nav-icon" src="images/fader.png"> -->
+								課程特色
+							</a></li>
+							<li><a href="#pricing" data-id="pricing" class="scroll-link">
+								<div class="avatar-container">
+									<div class="avatar-img-border">
+										<svg class="icon avatar-img">
+											<use xlink:href="#checked"></use>
+										</svg>
+									</div>
+								</div>
+								<!-- <img class="nav-icon" src="images/maps-and-flags.png"> -->
+								購買課程
+							</a></li>
+							<li><a href="#faq" data-id="faq" class="scroll-link">
+								<div class="avatar-container">
+									<div class="avatar-img-border">
+											<svg class="icon avatar-img">
+												<use xlink:href="#question"></use>
+											</svg>
+									</div>
+								</div>
+								<!-- <img class="nav-icon" src="images/headphones.png"> -->
+								常見問題
+							</a></li>
+							<li><a href="#about" data-id="about" class="scroll-link">
+								<div class="avatar-container">
+									<div class="avatar-img-border">
+										<svg class="icon avatar-img">
+											<use xlink:href="#line-graphic"></use>
+										</svg>
+									</div>
+								</div>
+								<!-- <img class="nav-icon" src="images/graphs.png"> -->
+								未來趨勢
+							</a></li>
+							<li><a href="#profile" data-id="profile" class="scroll-link">
+								<div class="avatar-container">
+									<div class="avatar-img-border">
+										<svg class="icon avatar-img">
+											<use xlink:href="#man"></use>
+										</svg>
+									</div>
+								</div>
+								<!-- <img class="nav-icon" src="images/actions.png"> -->
+								講師
+							</a></li>
+							<li><a href="#news" data-id="news" class="scroll-link">
+								<div class="avatar-container">
+									<div class="avatar-img-border">
+										<svg class="icon avatar-img">
+											<use xlink:href="#paper-printer"></use>
+										</svg>
+									</div>
+								</div>
+								<!-- <img class="nav-icon" src="images/paper-printer.png"> -->
+								新聞
+							</a></li>
+
+
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End Navigation -->
+	</header>
+	<!-- End Header -->
+
+		<!-- Begin Jumbotron -->
+	<div class="jumbotron jumbotron-main" id="home">
+		<div id="particles-js"></div><!-- /.particles div -->
+		<div class="container center-vertically-holder">
+			<div class="center-vertically">
+				<div id="scaleReveal" class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+					<!-- <span class="icon-handle-streamline-vector big-logo"></span> -->
+					<!-- <span class="code-icon"><i class="fa fa-cube" aria-hidden="true"></i></span> -->
+					<div class="ticker">
+						<h1 class="ticker-text">輕鬆學會寫程式</h1>
+						<h1 class="ticker-text">科技 x 金融</h1>
+						<h1 class="ticker-text">人生贏在起跑點</h1>
+					</div>
+					<hr>
+					<p>還在補沒有用的科目嗎？<br>改變你的未來，從寫程式開始</p>
+					<!-- &amp; modern design <i>+</i>&nbsp; code. -->
+					<a href="#ideology" data-id="ideology" class="scroll-link btn btn-default btn-white btn-lg mt15 intro-btn">了解更多 <span class="ion-android-arrow-down"></span></a>
+				</div><!-- /.column -->
+			</div><!-- /.vertical center -->
+		</div><!-- /.container -->
+	</div>
+	<!-- End Jumbotron -->
+
+
+	<!-- Begin Intro -->
+	<section id="ideology">
+
+		<!-- Begin Hello Intro -->
+		<div id="hello-intro" class="pt60 pb60">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-sm-3 students">
+						<h2 class="no-margin rotateLeftReveal">同學</h2>
+					</div>
+					<div class="col-lg-10 col-sm-9 mt30-xs" id="hello-intro-text">
+						<h3 class="no-margin rightReveal">你一定知道未來完全被科技主導，想學寫程式，卻又不知從何開始，或是覺得太難了。放心，讓我帶你從<strong>絕對入門</strong>開始，用最輕鬆的方式學會寫程式，國小至社會人士，通通可以學得懂。學習寫程式，開啟你的思維，打開你的眼界!</h3>
+					</div>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.div -->
+		<!-- End Hello Intro -->
+
+		<!-- Begin Our Process Title -->
+		<div id="our-process-title" class="pt30 pb30">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h4 class="no-margin">科技世代，三大優勢</h4>
+					</div>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.div -->
+		<!-- End Our Process Title -->
+
+		<!-- Begin Our Process -->
+		<div id="our-process">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50">
+											<div class="leftReveal">
+												<div class="process-intro">
+													<h3 class="process-number">01</h3>
+													<div><span class="process-icons icon-uniE634 rotateBottomReveal"></span></div>
+													<!-- <div><img src="images/features0.png" alt="..."></div> -->
+													<h2>工作不斷<br>被程式取代</h2>
+												</div>
+												<div class="process-content">
+													<div><span class="process-icons icon-uniE634"></span></div>
+													<h2 class="mt15 mb20">工作不斷<br>被程式取代</h2>
+													<p class="no-margin">不管是就業率, 還是職缺量, 所有數據都顯示寫程式是需求最大，遠高出其他領域的技能</p>
+												</div>
+											</div><!-- /.animation -->
+										</div><!-- /.column -->
+										<div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50">
+											<div class="bottomReveal">
+												<div class="process-intro">
+													<h3 class="process-number">02</h3>
+													<div><span class="process-icons icon-uniE6AF rotateBottomReveal"></span></div>
+													<h2>遠高出平均<br>的薪水</h2>
+												</div>
+												<div class="process-content">
+													<div><span class="process-icons icon-uniE6AF"></span></div>
+													<h2 class="mt15 mb20">遠高出平均<br>的薪水</h2>
+													<p class="no-margin">在美國，電腦科學系(也就是寫程式)大學畢業生起薪高出平均約40%, 年薪約180萬</p>
+												</div>
+											</div><!-- /.animation -->
+										</div><!-- /.column -->
+										<div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50 no-border-right">
+											<div class="rightReveal">
+												<div class="process-intro">
+													<h3 class="process-number">03</h3>
+													<div><span class="process-icons icon-uniE6C3 rotateBottomReveal"></span></div>
+													<h2>不當工程師<br>也該學習的技能</h2>
+												</div>
+												<div class="process-content">
+													<div><span class="process-icons icon-uniE6C3"></span></div>
+													<h2 class="mt15 mb20">不當工程師<br>也該學習的技能</h2>
+													<p class="no-margin">太多的企業家都說『人人都該學習寫程式』，不只因為它是未來，更因為它教你如何思考
+													</p>
+												</div>
+											</div><!-- /.animation -->
+										</div><!-- /.column -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.div -->
+		<!-- End Our Process -->
+
+		<!-- Begin Quote Carousel -->
+		<div id="carousel" class="testimonial-carousel pt40 pb20">
+			<div class="container">
+				<div class="row quotes-height">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<span class="pe-7s-close heading-3-icon"></span>
+		                <h2 class="heading-3">企業家怎麼說</h2>
+						<div class="fade-quote-carousel carousel slide" id="quote-carousel" data-ride="carousel" data-interval="3000">
+							<!-- Carousel indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#quote-carousel" data-slide-to="1"></li>
+								<li data-target="#quote-carousel" data-slide-to="2"></li>
+							</ol>
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="active item">
+									<blockquote>
+										<p>"每個人都應該寫程式，因為寫程式教你如何思考。"<br>  賈伯斯, Apple</p>
+									</blockquote>
+								</div>
+								<div class="item">
+									<blockquote>
+										<p class="gates-quote">"學習寫程式會伸展你的腦，讓你更會思考，新的思考模式不管在什麼領域都是有益的。"<br>- 比爾蓋茲, Microsoft</p>
+									</blockquote>
+								</div>
+								<div class="item">
+									<blockquote>
+										<p>"我們就像擁有超能力一般"<br> - Dropbox創辦人</p>
+									</blockquote>
+								</div>
+							</div>
+
+						</div><!-- /.carousel -->
+					</div><!-- /.column -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.carousel -->
+		<!-- End Quote Carousel -->
+
+	</section><!-- /.section -->
+	<!-- End Intro -->
+
+
+	<!-- Begin Services -->
+	<section id="services" class="background2 section-services section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 section-title text-center">
+					<h2>課程特色</h2>
+					<!-- 並不是在哪裏學習寫程式都一樣，相信你在台灣找不到可以比擬的課程。<br> -->
+					<br>課程並不是使用任何台灣傳統的教材，那樣不但侷限住你的眼界，不直覺的教學方式甚至讓你學不懂，
+					更怕學了已經被淘汰的知識。<br>
+					請放心，我的背景使我不同，追求的是<strong>「顛覆」的教學方式，最「新」的知識，最「有用」的內容。</strong><br>
+					<br>
+					<span class="section-divider"></span>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+
+			<div class="row">
+				<!-- Item 1 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="services-box leftReveal">
+						<span class="icon-uniE643 services-icon"></span>
+						<h3 class="service-name">1. 學會寫程式關鍵基礎</h3>
+						<p class="text-small">用最輕鬆的方式學會寫程式是課程的首要任務。程式語言有上百種，但關鍵基礎是完全互通的，學會這些基礎不管走什麼領域，都極為重要。</p>
+
+					</div>
+				</div><!-- /.column -->
+
+
+				<!-- Item 2 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
+					<div class="services-box topReveal">
+						<span class="services-badge badge">New</span>
+						<span class="icon-uniE64D services-icon"></span>
+						<h3 class="service-name">2. 隨時發問討論</h3>
+						<p class="text-small">線上課程最擔心的就是無法問問題，但參與過線上討論的同學都知道，真的不會無法發問。集中討論對大家幫助很大，這也是美國電腦科學系實際使用的發問平台。</p>
+
+					</div>
+				</div><!-- /.column -->
+
+				<!-- Item 3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
+					<div class="services-box rightReveal">
+						<span class="icon-uniE625 services-icon"></span>
+						<h3 class="service-name">3. 透過實作學習</h3>
+						<p class="text-small">透過實作是最好的學習方式，教學方式不是死板的介紹程式章節跟專有名詞，而是一步一步帶著你把程式做出來，一行一行的讓你完全聽懂。</p>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- Item 4 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+					<div class="services-box leftReveal">
+						<span class="services-badge badge">New</span>
+						<span class="icon-uniE64F services-icon"></span>
+						<h3 class="service-name">4. 結合美國頂尖大學的教材</h3>
+						<p class="text-small">為了使用最顛覆，<strong>最能輕鬆學會</strong>的方式教學寫程式，我整合多所美國頂尖大學實際使用的教材，與各大知名網站的實作練習，為了讓你學到最新、最有用的知識。</p>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- Item 5 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+					<div class="services-box bottomReveal">
+						<span class="icon-uniE6C6 services-icon"></span>
+						<h3 class="service-name">5. 打造程式履歷表</h3>
+						<p class="text-small">除了學會寫程式，更讓你在學習的過程中把程式透過GitHub進行版本控管，在GitHub網站上累積個人程式，這已經是現代科技業的履歷表，極為重要。</p>
+					</div>
+				</div><!-- /.column -->
+
+				<!-- Item 6 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+					<div class="services-box rightReveal">
+						<span class="services-badge badge">New</span>
+						<span class="icon-uniE65E services-icon"></span>
+						<h3 class="service-name">6. 了解現代科技領域與趨勢</h3>
+						<p class="text-small">不是只是制式的教學【寫】程式，而是在過程中，打開你的眼界，了解程式有多強大，為什麼所有領域皆仰賴程式，包括最夯領域：人工智慧</p>
+
+					</div>
+				</div><!-- /.column -->
+
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+	<!-- End Services -->
+
+
+	<!-- Begin Pricing -->
+	<section id="pricing" class="section-padding">
+		<div class="container">
+			<div class="row mb30">
+				<div class="section-title text-center ">
+					<h2>課程選擇</h2>
+					<span class="section-divider mb15"></span>
+<!--
+					<p class="no-margin" id="pricing-intro" ><br>
+						寫程式是現代最重要的能力，所有想學寫程式卻不知從何開始的人，兩個月的課程帶你輕鬆上手。不分年齡年紀，透過電腦就可以在家上課，用最輕鬆的方式上手寫程式。
+						<br><strong>網路班是即時的連線上課，隨時可以講話發問，並不會不方便問問題喔，甚至下課時也可以透過軟體與老師交流討論。報名請返回臉書按【立刻申請】</strong>
+					<p class="no-margin"></p> -->
+					<!-- <p class="no-margin" id="pricing-intro" >
+						規劃中
+					</p> -->
+
+					<div class="content">
+						<ul class="list-items list-items-center">
+
+
+							<li class="col-sm-6 col-md-6 col-lg-6 list-item">
+								<div class="pricing-box">
+									<!-- <div class="float-tag icon-newcoursetag-svg" id="tag-main-course"></div> -->
+									<div id="course1"  class="list-item-sm list-item-img has-header">
+									</div>
+									<div class="list-item-content text-gray-light">
+										<div class="course-title">基礎程式課程</div>
+										<div class="class-intro">Udemy平台暢銷課程</div>
+										<div class="class-info">
+											<div class="class-features">
+												<ul>
+													<li>建議年齡小四以上</li>
+													<li>透過實作學習</li>
+													<li>教學全世界最熱門的程式語言: Python</li>
+													<li>使用GitHub 打造程式履歷表</li>
+													<li>終身存取課程內容</li>
+												</ul>
+											</div>
+											<br>
+											<div class="try-course">歡迎至課程頁面了解詳細課程內容!</div>
+											<h4 class="price-text">
+												<!-- <del class="cross-off-price">原價 NT$7800</del> -->
+												<br class="hidden-br">
+												  NT$ 1950
+											</h4>
+										</div>
+										<a target="-blank" href="https://www.udemy.com/python-learn/?couponCode=WEBSITE1950" >
+											<div class="btn course-btn">
+												前往課程頁面
+												<!-- <i class="fa fa-mouse-pointer" aria-hidden="true"></i> -->
+											</div>
+										</a>
+
+										<div class="countdown-promote">
+											改變未來，<br class="hidden-br">從寫程式開始
+											<!-- 早鳥6折優惠<br class="hidden-br">將於2月5日23:59結束 -->
+										</div>
+									</div>
+								</div>
+							</li>
+
+
+							<!-- SECOND COURSE -->
+
+							<li class="col-sm-6 col-md-6 col-lg-6 list-item">
+								<div class="pricing-box">
+									<!-- <div class="float-tag icon-newcoursetag-svg" id="tag-main-course"></div> -->
+									<div id="course2"  class="list-item-sm list-item-img has-header">
+									</div>
+									<div class="list-item-content text-gray-light">
+										<div class="course-title">金融市場 x 程式交易</div>
+										<div class="class-intro">通往財富自由之路</div>
+										<div class="class-info">
+											<div class="class-features">
+												<ul>
+													<li>適合大學以上</li>
+													<li>金融圈最熱門的領域：程式交易</li>
+													<li>金融市場 + 程式交易完整課程</li>
+													<li>使用最主流的程式交易軟體 MultiCharts</li>
+													<li>終身存取課程內容</li>
+												</ul>
+											</div>
+											<br>
+											<div class="try-course">歡迎至課程頁面了解詳細課程內容!</div>
+											<h4 class="price-text">
+												<del class="cross-off-price">原價 NT$4800</del>
+												<br class="hidden-br">
+												  NT$ 2950
+											</h4>
+										</div>
+										<a>
+											<div class="btn course-btn">
+												籌備中，敬請期待
+												<!-- <i class="fa fa-mouse-pointer" aria-hidden="true"></i> -->
+											</div>
+										</a>
+
+										<div class="countdown-promote">
+											關鍵技術，<br class="hidden-br">開拓新眼界
+											<!-- 早鳥6折優惠<br class="hidden-br">將於2月5日23:59結束 -->
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div> <!--/.content-->
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+			<div class="row">
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="col-sm-4 leftReveal">
+					<img src="images/loading.gif" id="review0" alt="..." class="reviews">
+					<p>這個課程與往的程式教學課程風格截然不同，最大的特色是講師能夠以簡淺易懂的方式說明，沒有太多廢話又能切入主題核心，讓人很容易進入狀況，課程的章節規劃得很流暢完善，看得出非常用心在這個教學課程上，與先前買到其它python課程相較之下絕對是目前為止最棒的課程，讓我能夠一邊學習同時也一邊享受在這個學習的氛圍中，如果講師還有其它課程我也還會再繼續支持。</p>
+					<br>
+					<img src="images/loading.gif" id="review5" alt="..."  class="reviews">
+					<p>我喜歡這堂課，老師介紹的方式非常直觀、生活化，對於未接觸過程式語言的我，非常容易進入課程。</p>
+					<img src="images/loading.gif" id="review3" alt="..." class="reviews">
+					<p>之前在網路上看了很多教學影片但直到上了老師的課才對Python有比較完整的了解，也比較知道"寫程式"是怎麼一回事。謝謝老師~</p>
+				</div>
+				<div class="col-sm-8 mt20-xs rightReveal">
+					<img src="images/loading.gif" id="review2" alt="..." class="reviews">
+					<p>對於初學者這堂真的很完整，從對新手而言就開始頭痛的環境建置(各自有windows跟mac版的教學，cmd指令、好的編譯器)，還有本科生都不一定會有老師教但其實很需要熟悉的github跟基礎git指令，基礎指令學完老師也會示範未來如何查找第三方函式庫、如何使用pip install、如何快速上手第三方函式庫的方法，每個步驟是跟著老師同步完成的看的到所有細節，對於PPT簡報式課程感到沒有安全感的同學完全不用擔心，每一行每個步驟每一個檔案怎麼讀取怎麼生成，所有細節都會呈現絕對沒有「呃那一步到這一步中間發生了什麼事」的事情，老師不把任何知識當成「基本常識」只要有帶到就會解釋。
+
+學語言於我而言煩人的不是各種好像很厲害或刁鑽的函式，那些去查一下就好了，是有沒有辦法把複雜的過程拆解成有邏輯的程式碼，這個過程中必須要很清晰的知道自己在處理的資料是什麼型態，老師都講得很清楚搞不好比本科的老師都講得清楚，用各種舉例的方式我相信完全沒有程式語言基礎的人也一定可以上手，如果仍然有問題還有討論區，大家都會在裡面發問，是一堂物超所值的課。</p>
+					<img src="images/loading.gif" id="review1" alt="..." class="reviews">
+					<p>簡單扼要 可以用良好的比喻去解釋初學者容易犯錯的地方 也可以讓初學者減少走錯路的思維 並且提供良好寫程式的思維 對於非本科系的人有很大的幫助 是目前看過初學者程式教學講解最好的 不會讓人覺得冗長或是聽不懂</p>
+					<img src="images/loading.gif" id="review4" alt="..." class="reviews">
+					<p>真的非常有幫助，最重要的是課堂很有趣，讓我很有帶入的思考感，不會覺得無聊，希望老師還有其他課程。</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-sm-8 mt20-xs rightReveal">
+					<h5 class="heading-1 mb20">　</h5>
+					<h3 class="no-margin-top mb15">改變你的未來，從寫程式開始</h3>
+					<p class="no-margin">為什麼從一台咖啡機，微波爐，掃地機器人，手機APP，網站，到無人車，都需要寫程式，
+								當你轉一圈看看生活周遭，有多少東西需要寫程式，你自然就會明白為什麼要學習寫程式。
+								所有領域皆仰賴程式，工作不斷的被程式取代，許多國家趕緊將寫程式列為國小國中課程，歐巴馬甚至在去年一月砸40億美金推廣程式教育，並說"這是為了確保大家在這樣的科技新世代，除了因應工作需求，每個人也都有成功的機會。"</p>
+				</div><!-- /.column -->
+				<div class="col-sm-4 leftReveal">
+					<h5 class="heading-1 mb20">　</h5>
+					<h3 class="no-margin-top mb15">我和別人不一樣</h3>
+					<p class="no-margin">於美國9年的背景，從科技知識到視野，與多位頂尖大學電腦科學教授合作，這都不是台灣民眾走進書店，隨便拿起一本程式教材，可以比擬的。核心價值：「顛覆」的教學方式，最「新」的知識，最「有用」的內容。</p>
+				</div><!-- /.column -->
+
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+	<!-- End Pricing -->
+
+
+
+		<!-- Begin FAQ -->
+			<section id="faq" class="background2 section-padding">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 section-title text-center  leftReveal">
+							<h2 class="rightReveal">常見問題</h2>
+							<span class="section-divider"></span>
+						</div><!-- /.column -->
+					</div><!-- /.row -->
+
+					<div class="row mb_m">
+							<p class="justify-text video-text">
+
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>&#9733; 在哪裡上課？</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">目前課程都是『線上課程』，所以課程上線後，隨時隨地都可以透過手機、平板、與電腦在上看課程影片，沒有時間和地點的問題！
+								</div>
+
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>&#9733; 課程可以看幾次？</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">
+									課程可以永久 無限次數重複觀看。<br>
+								</div>
+
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>&#9733; 什麼時候會推出Python進階課程？</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">
+									<感謝眾多同學詢問進階課程，進階課程已經確定進入製作規劃，預計2019年底，或2020年初將推出，敬請期待。
+								</div>
+
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>&#9733; 金融市場 x 程式交易課程是Python的進階課程嗎？</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">
+									不是，這兩堂為單獨個別的課程，程式交易的課程中使用的程式語言為程式交易軟體的程式語言Powerlanguage，於課程中也會從頭教起，但若學過Pytho基礎程式課程，對於學習這個新語言來講，會非常容易，因為寫程式的核心觀念都是共通的。
+								</div>
+
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>&#9733; 完全沒有基礎可以學習嗎</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">沒問題，課程就是適合任何零基礎想上手寫程式的同學。<br>
+								</div>
+
+
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>電腦需要什麼設備？</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">
+									線上課程可以用任何平台播放，手機也可下載Udemy app來播放課程。<br>
+									寫程式則不行使用手機或平板來寫，必須使用電腦。
+									一般電腦即可，不需要任何特殊的電腦或是特別高階的電腦。
+								</div>
+<!--
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>實體班下期上課日期是哪些</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">台南班下期週四班：<br>
+									台南週五班：<br>
+								</div> -->
+
+
+
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>到底什麼是「寫程式」？</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">
+									對沒有接觸過寫程式的人來說，「寫程式」確實相當抽象，幾乎可以說是一種學過才會有概念的技術。<br>
+									如果用簡單的言語形容，寫程式指的就是<strong>在電腦上輸入程式碼，讓電腦可以執行你想要它執行的功能。</strong><br>
+									我們人類溝通的語言，例如中文，英文，我們可以用來傳達意思。在電腦上，我們寫的語言叫做程式語言，特過這種語言，我們可以讓電腦執行我們想叫它執行的功能。<br>
+									寫【程式】所指的程式，可以極度簡單，例如溫度換算的程式，將'C轉換成'F，也可以非常複雜，例如整個臉書，或是一個電腦軟體或手機軟體, 甚至一個程式也可以強大的使用數千台電腦一起進行巨量運算。
+								</div>
+
+
+								<div class="accordion">
+									<i class="icon-questions"></i>
+									<span>為什麼大學以前就該學寫程式？</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">
+									1. 未來被科技主導，不會寫程式的人不斷被寫程式取代，這麼明顯的科技趨勢，也是為什麼先進國家各國紛紛將寫程式那入國小國中課綱。<br>
+									2. 越早開始寫程式，你有越多時間可以開發自己的程式，如果大學選了資訊工程，你的背景將讓你學的得心應手，可以專心於研發課外強大的程式，面試時被問到課外開發的專案，你會有好多東西可以講，這樣的人才，才是公司想要的實力派。<br>
+									3. 另一個好處是及早開發興趣，大學選擇科系時，不會像其他人一樣迷惘，不知道未來何去何從。目標清楚，知道自己喜歡什麼很重要，這是台灣跟美國教育上很大的差別。</div>
+
+									<div class="accordion">
+										<i class="icon-questions"></i>
+										<span>平常寫程式遇到問題怎麼辦？</span>
+										<i class="icon-arrow"></i>
+									</div>
+									<div class="panel">有線上討論區讓同學發問/討論，老師會迅速於線上討論區回答，如有特別需要，也可用其他方式連線協助同學解決問題。</div>
+
+									<!-- <div class="accordion">
+										<i class="icon-questions"></i>
+										<span>課程內容</span>
+										<i class="icon-arrow"></i>
+									</div>
+									<div class="panel">
+										課程重點的是把核心基礎學好，讓同學可以拿良好的基礎去發展自己有興趣的領域。<br>
+										課程不是教學製作手機app, 或是教學製作網站等等的應用喔！（未來會有課程讓大家學習各種寫程式的進階應用。）<br>
+										如果同學有一些比較可有可無或是罕見的語法想要了解，可以於我們的發問討論區提出，一定會給你完整的回答，加油！<br>
+
+										<br>
+										<strong>程式方面的重點學習項目：</strong><br>
+
+										數據型態(Data Types)，條件式邏輯(Conditional Statements), 迴圈(Loops), 函式(Functions)，函式庫(Libraries)的使用，檔案讀寫，資料處理。<br>
+										<br>
+										<strong>相關重點學習項目：</strong><br>
+
+										GitHub做版本控管，如何使用別人寫好的套件，如何寫自己的程式(思考流程是什麼)。<br>
+
+										除了學習寫程式的良好基礎，我認為最重要的價值是熟悉【如何把問題化為程式碼解決】，這樣子的思維訓練是非常重要的。只會程式語法是沒有用的，要懂得把面對的問題化為程式碼才是關鍵。<br>
+									</div> -->
+
+								<!-- <div class="accordion">
+									<i class="icon-questions"></i>
+									<span style="">有作業嗎？</span>
+									<i class="icon-arrow"></i>
+								</div>
+								<div class="panel">有，作業屬於自發性的完成，可以於線上繳交作業，並於周間透過軟體發問問題，提高學習效率。</div> -->
+						</div>
+					<!-- </div> -->
+
+					<!-- <div class="row mb40">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 topReveal">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/nKIu9yen5nc" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div> -->
+
+			</section><!-- /.section -->
+			<!-- End FAQ -->
+
+
+
+
+
+	<!-- Begin Our Count -->
+	<section id="ourcount" class="section-padding">
+		<div class="container">
+			<div class="row mb30">
+				<div class="section-title col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+					<h2>讓數據說話</h2>
+					<span class="section-divider mb15"></span>
+					<p class="no-margin lighter-text">美國加州矽谷今日職缺，所需求的科系 (資料來源：Indeed.com)</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+			<div class="row">
+				<div class="col-sm-6 col-md-3 item leftReveal">
+					<div class="circle-hold">
+                        <i class="icon-uniE64C"></i>
+                    </div>
+                    <h2 class="timer mb5" data-from="1" data-to="4787" data-refresh-interval="20">1</h2>
+                    <p class="no-margin lighter-text">經濟系</p>
+				</div><!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs rightReveal">
+					<div class="circle-hold">
+                        <i class="icon-uniE671"></i>
+                    </div>
+                    <h2 class="timer mb5" data-from="1" data-to="4507" data-refresh-interval="20">1</h2>
+                    <p class="no-margin lighter-text">數學系</p>
+				</div><!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm leftReveal">
+					<div class="circle-hold">
+						<!-- <span class=""></span> -->
+                        <i class="icon-uniE60A"></i>
+                    </div>
+                    <h2 class="timer mb5" data-from="1" data-to="5498" data-refresh-interval="20">1</h2>
+                    <p class="no-margin lighter-text">電機工程系</p>
+				</div><!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm rightReveal">
+					<div class="circle-hold">
+                        <i class="icon-uniE621"></i>
+                    </div>
+                    <h2 class="timer mb5" data-from="1" data-to="22684" data-refresh-interval="20">1</h2>
+                    <p class="no-margin lighter-text">電腦科學系</p>
+				</div><!-- /.column -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+	<!-- End Our Count -->
+
+
+		<!-- Begin About -->
+		<section id="about" class="background2 section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 section-title text-center">
+						<h2>未來趨勢</h2>
+						<span class="section-divider"></span>
+					</div><!-- /.column -->
+				</div><!-- /.row -->
+				<div class="row mb15">
+					<div class="col-sm-5 leftReveal">
+						<h5 class="heading-1 mb20">無法否認，寫程式是現代世界最重要的能力。</h5>
+						<div class="icon logo-img logo-about">
+							<img alt="" id="icon0" class="img-circle img-responsive" src="images/loading.gif">
+						</div>
+						<h3 class="mb15 no-margin-top font-darker">台灣教育體系失敗，學歷氾濫，許多學生僅追求文憑，甚至選校不選系，
+							完全對程式教育並沒有理解其重要性。每分每秒，當美國在開發人工智慧，無人商店，為什麼台灣的學生還在熬夜死背數學公式</h3>
+						<p class="no-margin text-small"></p>
+					</div><!-- /.column -->
+					<div class="col-sm-7 mt30-xs rightReveal">
+						<h5 class="heading-1 mb20">一定要理解 學什麼才【有用】</h5>
+						<div class="icon logo-img logo-about">
+							<img alt="" id="icon1" class="img-circle img-responsive" src="images/loading.gif">
+						</div>
+						<div class="justify-text font-darker">
+						<p>
+							根據統計，美國前50%高薪職位，全部需求這個技能-寫程式。大學畢業生寫程式平均入行薪水為年薪180萬台幣。許多先進國家早已把寫程式納入國小國中課程，台灣卻還是不為所動。
+							在美國學生搶破頭想要申請的系，在台灣卻是許多人根本沒聽過電腦科學系。在美國申請電腦科學的人數是電機系的6倍左右，工作職缺甚至贏出十倍的規模。當你跨越傳送門，到達了加州矽谷科技公司，此時你會深刻體會什麼才是最重要的技能。</p>
+						</div>
+					</div><!-- /.column -->
+				</div><!-- /.row -->
+				<div class="row mb30">
+					<div class="col-sm-9 leftReveal">
+						<h5 class="heading-1 mb20">打開國際觀，擺脫傳統教育束縛</h5>
+						<div class="icon logo-img logo-about">
+							<img alt="" id="icon2" class="img-circle img-responsive" src="images/loading.gif">
+						</div>
+						<div class="justify-text  font-darker">
+						<p class="no-margin">物聯網，無人車，虛擬實境，人工智慧，世界改變的速度遠超乎你的想像。不管申請研究所與教授面試，還是工作面試，老闆第一句就問:<strong>"會寫程式嗎"</strong>，當下你才會恍然大悟，以前背誦的文言文與化學反應式，熬夜讀書多換來的5分10分，並沒有幫到你。
+							搭一趟13小時的飛機，過一個海關，你到了美國Google總部，台灣教育給你背誦的所有資訊，卻幫不上忙。
+							比起失敗的傳統課綱，背了就多分的考試制度，公司想要的是怎麼樣的人才，需要什麼樣的能力，才是你應該思想的重點。
+
+
+						</p>
+					</div>
+					</div><!-- /.column -->
+					<div class="col-sm-3 mt30-xs rightReveal">
+						<h5 class="heading-1 mb20">歐巴馬2016砸40億美金推廣程式教育</h5>
+						<!-- <img src="images/networking.png" class="logo-img logo-about" alt="..."> -->
+						<p class="no-margin text-small font-darker"><i>我們活在一個改變極快的世代，新的科技不斷地取代工作，我們要怎麼樣確保大家在這樣的新世代下都有成功的機會? 答案: 電腦科學，也就是程式教育" - 歐巴馬</i></p>
+					</div><!-- /.column -->
+				</div><!-- /.row -->
+				<div class="row">
+					<div class="col-lg-7 col-sm-5 bottomReveal">
+						<h5 class="heading-1 mb20">美國大學科系平均申請人數</h5>
+						<div class="progress">
+							<div class="progress-bar text-left" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+								電腦科學(寫程式) Computer Science
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar text-left" role="progressbar" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100" style="width: 29%;">
+								機械工程(寫程式) Mechanical Engineering
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar text-left" role="progressbar" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100" style="width: 26%;">
+								生物工程 BioEngineering
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar text-left" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 21%;">
+								電機工程 Electrical Engineering
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar text-left" role="progressbar" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100" style="width: 19%;">
+								化學工程 Chemical Engineering
+							</div>
+						</div>
+						<div class="progress-meter mb30-xs">
+							<div class="meter meter-left" style="width: 30%;"><span class="meter-text">1000</span></div>
+							<div class="meter meter-left" style="width: 20%;"><span class="meter-text">1700</span></div>
+			    			<div class="meter meter-right" style="width: 20%;"><span class="meter-text">3500</span></div>
+							<div class="meter meter-right" style="width: 30%;"><span class="meter-text">2800</span></div>
+						</div>
+					</div><!-- /.column -->
+					<div class="col-lg-5 col-sm-7 mt10 rotateLeftReveal">
+						<div id="about-carousel" class="basic-carousel carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#about-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#about-carousel" data-slide-to="1"></li>
+								<li data-target="#about-carousel" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="images/loading.gif" id="chart0" alt="..." class="img-responsive">
+								</div>
+								<div class="item">
+									<img src="images/loading.gif" id="chart1" alt="..." class="img-responsive">
+								</div>
+								<div class="item">
+									<img src="images/loading.gif" id="chart2" alt="..." class="img-responsive">
+								</div>
+							</div>
+						</div>
+					</div><!-- /.column -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section><!-- /.section -->
+		<!-- End About -->
+
+
+	<!-- Begin Timeline -->
+<section id="timeline" class="section-padding-top background-photography">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 section-title text-center">
+				<h2>課程延展性</h2>
+				<span class="section-divider"></span>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="timeline pb80">
+
+					<!-- Item 1 -->
+					<li>
+						<div class="timeline-image scaleReveal"><img alt="" id="icon3" class="img-responsive" src="images/loading.gif"></div>
+						<div class="timeline-panel leftReveal">
+							<div class="timeline-heading">
+								<h5 class="heading-1 mb15">必學課程</h5>
+								<h4 class="subheading">基礎程式課程</h4>
+							</div>
+							<div class="timeline-body">
+								<p>由此開始讓你對科技大開眼界！除了教會你寫程式，也從根基讓你了解真正業界在使用的科技與開發方式，「好的基礎」很重要。由此帶你用最輕鬆的方式上手寫程式。</p>
+							</div>
+						</div>
+					</li>
+
+					<!-- Item 2 -->
+					<li class="timeline-inverted">
+						<div class="timeline-image scaleReveal"><img alt="" id="icon4" class="img-responsive" src="images/loading.gif"></div>
+						<div class="timeline-panel rightReveal">
+							<div class="timeline-heading">
+								<h5 class="heading-1 mb15">建議課程</h5>
+								<h4 class="subheading">進階程式課程</h4>
+							</div>
+							<div class="timeline-body">
+								<p>進階課程一樣是以實作程式的方式帶領大家學習一些進階的程式概念，例如物件導向、製作程式圖像畫面等等，由於程式碼的結構複雜性稍微提高，建議適合國中以上。</p>
+							</div>
+						</div>
+					</li>
+
+					<!-- Item 3 -->
+					<li>
+						<div class="timeline-image scaleReveal"><img alt="" id="icon5" class="img-responsive" src="images/loading.gif"></div>
+						<div class="timeline-panel leftReveal">
+							<div class="timeline-heading">
+								<h5 class="heading-1 mb15">興趣課程</h5>
+								<h4 class="subheading">資料科學/人工智慧</h4>
+							</div>
+							<div class="timeline-body"><p>學完基礎程式課程的同學，如果對數據分析有興趣，也可以不學進階課程直接切入資料科學/人工智慧領域。人工智慧其實所指的就是【機器學習】技術，這不但是數據分析頂尖的方式，也是目前科技界的最夯的領域。
+							</div>
+						</div>
+					</li>
+
+					<!-- Item 4 -->
+					<li class="timeline-inverted">
+						<div  class="timeline-image scaleReveal"><img alt="" id="icon6" class="img-responsive" src="images/loading.gif"></div>
+						<div class="timeline-panel rightReveal">
+							<div class="timeline-heading">
+								<h5 class="heading-1 mb15">興趣課程</h5>
+								<h4 class="subheading">金融市場 x 程式交易</h4>
+							</div>
+							<div class="timeline-body">
+								<p>程式交易是近年來金融圈最熱門的領域，從實戰角度學習金融市場，再透過程式交易來達到安全、穩定的交易方式。</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End Timeline -->
+
+<!-- Start Profile -->
+<section id="profile" class="background2 section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 section-title text-center">
+				<h2>講師</h2>
+				<span class="section-divider"></span>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+		<div class="row">
+			<div class="col-sm-4">
+				<div id="profile-div">
+					<img id="teacher0" alt="" src="images/loading.gif" class="img-responsive">
+					<!-- <p id="text-over-profile">我跟你們一樣年輕喔!</p> -->
+				</div>
+				<div class="profile-box">
+					<ul class="list-unstyled">
+						<li><strong>大家好，我是Allen</strong> </li>
+						<li><strong>學位:</strong> 美國UCSD學士學位，CS電腦科學系</li>
+						<li><strong>學系:</strong> Computer Science, 電腦科學</li>
+						<li><strong>GitHub:</strong> <a href="https://github.com/yclliu" target="_blank">yclliu</a></li>
+						<li><strong>軟體技術:</strong> Python, Java, C/C++, JavaScript, Object Oriented Programming, Parallel Programming, Data Analytics, Machine Learning, Git, Travis CI, Docker, SQL, MongoDB, HTML, CSS, Meteor.js, Node.js, Unix, Linux, Assembly Language</li>
+					</ul>
+				</div>
+			</div><!-- column -->
+			<div class="col-sm-8 mt30-xs">
+				<!-- <h5 class="heading-1 mb20">大家好，我是Allen</h5> -->
+				<h3 class="mb15 no-margin-top">我放棄210萬加州矽谷年薪，熱情實現教育改革夢想</h3>
+				<p class="text-small text-switch">畢業於美國UCSD(加利福尼亞大學聖地牙哥分校)，主修Computer Science電腦科學系。UCSD Computer Science 是全球第11名的電腦科學系所。2014年受邀合作創業金融科技公司，從開發程式分析金融市場數據，到人工智慧技術(機器學習)的使用，到使用雲端運算數十台電腦的高度運算，甚至到網頁的設計到開發全部由我一手建置。
+					畢業後我於北加州UCD(加利福尼亞大學戴維斯分校)就任全職工程師，與多位電腦科學系教授合作，為一項NSF(國家科技協會) 3千萬贊助的專案做程式開發與研究。我是專案中的領導開發者，設計並開發整個專案的各項程式，也被NSF列為關鍵貢獻者。
+					此外，我還有大量的課外研究專案，主要為程式交易領域，也是我的最大興趣。興趣，永遠是最大的驅使者，因為熱誠，才可以達到巔峰。
+				</p>
+				<span class="divider"></span>
+				<p class="text-small">從小，我就是個科技狂熱者。8,9 歲開始做網頁；12 歲開始組裝電腦，從親朋好友到執業場所，一路組裝了超過25台電腦。很感謝有機會就讀頂尖的電腦科學系，從硬體到軟體的透徹學習，把我對電腦科技的求知欲徹底補足，讓我走到科技的尖峰。由於我體會過台灣失敗的教育體系，同時見識到科技世代寫程式的重要性，燃起教育改革的夢想，希望將這些最領先的知識，帶進台灣教育，開拓你的眼界，激發你的熱誠，實質改變你的人生！</p>
+				<img id="teacher1" alt="" src="images/loading.gif" class="img-responsive" style="margin-top: 16px">
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section>
+<!-- End Profile -->
+
+
+
+<!-- Begin news -->
+<section id="news" class="section-padding-top">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 section-title text-center">
+				<h2>新聞</h2>
+				<span class="section-divider mb15"></span>
+				<p class="mb30 scaleReveal">還在猶豫要不要學寫程式嗎？其實每天都有好多新聞在提醒你寫程式的重要性喔！<br>-</p>
+			</div><!-- /.column -->
+		</div><!-- /.row -->
+
+		<div id="thework">
+			<!-- Item 1 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news0" alt="1" class="img-responsive portfolio-image fade-in-on-load"></div>
+					<!-- src="images/work/1.jpg" -->
+					<!-- <span class="portfolio-badge badge">Graphics</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="https://www.gvm.com.tw/webonly_content_8658.html" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">未來人才必備能力！ -遠見雜誌</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+
+				<!-- Item 2 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news1" alt="2" class="img-responsive portfolio-image fade-in-on-load"></div>
+					<!-- <span class="portfolio-badge badge">Print + Identity</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="http://www.storm.mg/lifestyle/198250" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">Coding沒有這麼難 -風傳媒</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+
+				<!-- Item 3 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news2" alt="3" class="img-responsive portfolio-image fade-in-on-load"></div>
+					<!-- <span class="portfolio-badge badge">Print</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="https://buzzorange.com/techorange/2017/01/26/did-they-program/" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">CEO都會寫程式嗎？ -TechOrange</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+
+				<!-- Item 4 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news3" alt="4" class="img-responsive portfolio-image fade-in-on-load"></div>
+					<!-- <span class="portfolio-badge badge">Graphics</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="http://topic.parenting.com.tw/issue/2016/coding/article-10.html" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">資料來源：親子天下</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+
+				<!-- Item 5 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news4" alt="5" class="img-responsive portfolio-image fade-in-on-load"></div>
+					<!-- <span class="portfolio-badge badge">Print + Identity</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="http://tedxtaipei.com/articles/10-places-where-anyone-can-learn-to-code/" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">人人都該學程式設計 -TEDxTaipei</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+
+				<!-- Item 6 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news5" alt="6" class="img-responsive portfolio-image fade-in-on-load"></div>
+					<!-- <span class="portfolio-badge badge">Web</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="http://topic.parenting.com.tw/issue/2016/coding/article-1.html" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">資料來源：親子天下</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+
+				<!-- Item 7 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news6" alt="7" class="img-responsive portfolio-image fade-in-on-load"></div>
+					<!-- <span class="portfolio-badge badge">Graphics + Print</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="http://topic.parenting.com.tw/issue/2016/coding/article-4.html" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">資料來源：親子天下</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+
+				<!-- Item 8 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news7" alt="8" class="img-responsive portfolio-image"></div>
+					<!-- <span class="portfolio-badge badge">Web</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="http://topic.parenting.com.tw/issue/2016/coding/article-8.html" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">資料來源：親子天下</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+
+				<!-- Item 9 -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding">
+					<div class="portfolio-image-holder"><img src="images/loading.gif" id="news8" alt="9" class="img-responsive portfolio-image"></div>
+					<!-- <span class="portfolio-badge badge">Web</span> -->
+					<span class="portfolio-hover">
+					<span>
+						<a href="https://www.thenewslens.com/article/4797" target="_blank">
+							<span class="portfolio-links"><span class="icon-uniE684 portfolio-links-icons"></span></span>
+						</a>
+						<span class="project-title no-margin-bottom mt10">資料來源：關鍵評論網</span>
+					</span>
+				</span>
+				</div><!-- /.column -->
+		</div><!-- /.row -->
+	</div><!-- /.container -->
+</section><!-- /.section -->
+<!-- Begin news -->
+
+
+			</div><!-- /.column -->
+		</div>
+
+
+			<!-- Begin Contact -->
+			<section id="contact" class="background2 section-padding">
+				<div class="container">
+					<div class"row">
+						<div class="col-sm-5 col-lg-4">
+
+								<!-- <h3>上課地點</h3> -->
+								<h3 class="mb20" style="margin-left:-14px;">地點</h3>
+								<hr class="mini-hr" style="margin-left:-14px;">
+								<!-- <span class="section-divider mb15"></span> -->
+
+
+							<div class="row">
+
+
+								<div id="about-carousel" class="basic-carousel carousel slide" data-ride="carousel">
+
+
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner classroom-carousel" role="listbox">
+										<div class="item active">
+											<img src="images/loading.gif" id="classroom0" alt="..." class="img-responsive">
+										</div>
+										<div class="item">
+											<img src="images/loading.gif" id="classroom1" alt="..." class="img-responsive">
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="row">
+
+									<!-- <h5 class="heading-1 mb20">地點</h5> -->
+									<h4 class="mb15"><br>台灣文創訓練中心<br></h4>
+									<p class="no-margin text-xs-small">高級教室環境，最舒適的上課環境。</p>
+
+
+
+								</div><!-- /.column -->
+							</div>
+						</div><!-- /.column -->
+
+						<div class="col-sm-6 col-lg-7 mt30-xs">
+							<div class="row mb20">
+								<div class="section-title text-center">
+
+									<h2>實體班地點</h2>
+									<span class="section-divider mb15"></span>
+									<!-- <p class="no-margin scaleReveal">打開眼界，翻轉未來<br></p> -->
+								</div><!-- /.column -->
+
+								<div class="col-sm-6 col-lg-6">
+									<h3 class="text-center">嘉義班：我思我在文教學堂<br></h3>
+									<p class="no-margin scaleReveal"><br><strong>地址：嘉義市中山路107號4F</strong> <br>[中山路郵局樓上四樓]</p>
+
+
+
+
+								</div>
+								<div class="col-sm-6 col-lg-6">
+									<h3 class="text-center">台南班：台南擎天館<br></h3>
+									<p class="no-margin scaleReveal"><br><strong>地址：台南市東區中華東路二段77號<br>13F</strong>   [擎天大樓, 一樓為臺灣企銀]</p>
+
+
+							</div><!-- /.row -->
+
+
+		</div><!-- /.container -->
+	</section><!-- /.section -->
+	<!-- End Contact -->
+
+
+	<!-- Begin Map -->
+	<!-- <div id="map"></div> -->
+	<!-- End Map -->
+
+	<!-- Begin Footer -->
+	<footer class="footer-padding">
+		<div class="container">
+			<!-- <div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<span class="logo-icon">
+						<svg class="icon logo-icon">
+						<use xlink:href="#cube" />
+						</svg>
+					</span>
+
+					<h2 class="theme-title">Learn.to.code<span class="theme-title-smaller">.TW</span></h2>
+					<p class="text-xs-small mb5"><strong style="color:white;">Email:</strong> learn.to.code.tw@gmail.com</p>
+					<p class="text-xs-small mb5"><strong style="color:white;">Line:</strong> learntocodetw</p>
+					<p class="text-xs-small mb5"><strong class="color:white;">Facebook: <a href="https://www.facebook.com/%E8%BC%95%E9%AC%86%E5%AD%B8%E6%9C%83%E5%AF%AB%E7%A8%8B%E5%BC%8F-2218222168403944/"></strong>輕鬆學會寫程式</p></a>
+					<p class="text-xs-small mb5">立刻按讚臉書頁面關注最新資訊! <div class="fb-like elementary-btn" data-href="https://www.facebook.com/learntocodetw/" data-width="300" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div></h4>
+						<a href="https://www.facebook.com/%E8%BC%95%E9%AC%86%E5%AD%B8%E6%9C%83%E5%AF%AB%E7%A8%8B%E5%BC%8F-2218222168403944/"><div class="social-icons-dark-hover" title="Facebook"><svg viewBox="0 0 512 512" class=" social-icons-dark-hover facebook"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg>
+							</div></a>
+				</div>
+			</div> -->
+
+
+			<div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-md-6 col-sm-6">
+            <div class="footer-title"><span>輕鬆學會寫程式</span></div>
+            <p>致力於建立全中文語系最容易輕鬆上手的程式課程，打破你覺得寫程式太遙不可及的障礙，透過實體班的教學經驗，證實了從國小至社會人士都可以學會寫程式。
+							現在推出線上課程，讓你享有最大的時間自由，地點自由，以自己最舒適的狀態學習。
+							<br><br></p>
+            <div class="footer-title"><span>聯絡資訊</span></div>
+            <address class="margin-bottom-40">
+              <!-- undefined<br>
+              undefined<br>
+              undefined<br> -->
+              <!-- Phone: undefined<br> -->
+              Facebook: <a href="https://www.facebook.com/learntocodetw" target="_blank">輕鬆學會寫程式 專頁</a> <br>
+              Email: <a href="mailto:learn.to.code.tw@gmail.com">learn.to.code.tw@gmail.com</a><br>
+							Line ID: <a href="https://line.me/R/ti/p/%40axs7448s" target="_blank">learntocodetw</a> <br>
+            </address>
+          </div>
+          <!-- END BOTTOM ABOUT BLOCK -->
+
+          <!-- BEGIN BOTTOM CONTACTS -->
+          <div class="col-md-6 col-sm-6">
+            <div class="footer-title"><span>快速連結</span></div>
+            <ul class="list-unstyled">
+							<li><a href="#services" data-id="services" class="scroll-link">課程特色</a></li>
+              <li><a href="#pricing" data-id="pricing" class="scroll-link">購買課程</a></li>
+							<li><a href="#faq" data-id="faq" class="scroll-link">問與答</a></li>
+							<li><a href="#profile" data-id="profile" class="scroll-link">講師</a></li>
+            </ul>
+          </div>
+          <!-- END BOTTOM CONTACTS -->
+
+
+        </div>
+
+
+			<!-- <div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-small text-center">
+					<hr>
+					<button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Up</button>
+
+					<div class="icon-cite">Icons made by <a href="http://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC BY 3.0 &nbsp;</a> <a href="privacy_policy.pdf">Privacy Policy</a>  </div>
+					<p class="no-margin"><br>&copy; 輕鬆學會寫程式</p>
+				</div>
+			</div> -->
+
+
+		</div><!-- /.container -->
+
+
+
+	</footer><!-- /.footer -->
+	<!-- End Footer -->
+	<div class="footer2">
+
+		<span> © 2019 Copyright - 輕鬆學會寫程式 </span>
+		<div class="icon-cite">Contain icons made by <a href="http://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC BY 3.0 &nbsp;</a> <a href="privacy_policy.pdf">Privacy Policy</a>  </div>
+	</div>
+
+	<div class="msgbutton-fixed">
+		<a href="https://line.me/R/ti/p/%40axs7448s" target="_blank" class="msgbutton msgbutton-line" title="LINE詢問">
+			<span>
+				LINE
+			</span>
+		</a>
+		<a href="http://m.me/learntocodetw" target="_blank" class="msgbutton msgbutton-facebook" title="Facebook詢問">
+				<span class="icon-bubbles4"></span>
+		</a>
+	</div>
+	<!-- <link rel="preload" href="css/combined.min.css" title="main-css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/combined.min.css"></noscript> -->
+
+	<link rel="preload" href="css/combined.css" title="main-css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/combined.css"></noscript>
+	<!-- <link rel="stylesheet" href="css/combined.css"> -->
+
+	<script>
+	(function(a){var b=function(c,k,d){var l=a.document;var m=l.createElement("link");var e;if(k){e=k}else{var i=(l.body||l.getElementsByTagName("head")[0]).childNodes;e=i[i.length-1]}var f=l.styleSheets;m.rel="stylesheet";m.href=c;m.media="only x";function j(n){if(l.body){return n()}setTimeout(function(){j(n)})}j(function(){e.parentNode.insertBefore(m,(k?e:e.nextSibling))});var h=function(o){var n=m.href;var p=f.length;while(p--){if(f[p].href===n){return o()}}setTimeout(function(){h(o)})};function g(){if(m.addEventListener){m.removeEventListener("load",g)}m.media=d||"all"}if(m.addEventListener){m.addEventListener("load",g)}m.onloadcssdefined=h;h(g);return m};if(typeof exports!=="undefined"){exports.loadCSS=b}else{a.loadCSS=b}}(typeof global!=="undefined"?global:this));(function(a){if(!a.loadCSS){return}var b=loadCSS.relpreload={};b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(d){return false}};b.poly=function(){var d=a.document.getElementsByTagName("link");for(var e=0;e<d.length;e++){var f=d[e];if(f.rel==="preload"&&f.getAttribute("as")==="style"){a.loadCSS(f.href,f,f.getAttribute("media"));f.rel=null}}};if(!b.support()){b.poly();var c=a.setInterval(b.poly,300);if(a.addEventListener){a.addEventListener("load",function(){b.poly();a.clearInterval(c)})}if(a.attachEvent){a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this));
+	</script>
+	<!-- async defer -->
+	<script src="js/combined_async.min.js" async defer></script>
+
+</body>
+</html>
