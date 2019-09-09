@@ -722,6 +722,18 @@ button:hover,
     font-size: 26px;
 }
 
+.heading-4 {
+  font-family: Microsoft JhengHei, 'Montserrat', sans-serif;
+  color: rgb(44, 44, 44);
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #202020;
+  padding-bottom: 4px;
+  display: inline-block;
+  margin: 0;
+}
+
 .img-responsive { width: 100%; }
 
 .breadcrumb-holder {
